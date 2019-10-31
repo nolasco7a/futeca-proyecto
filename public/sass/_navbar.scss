@@ -1,0 +1,11 @@
+.navbar{
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    background: hsla(0, 0%, 26%, 0.5);
+    margin-top: 25px;
+    
+    .nav-link{
+        color: white !important;
+    }
+}
