@@ -1,50 +1,264 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+body {
+  font-family: 'roboto', sans-serif;
+  font-size: 18px;
+  line-height: 1.8em;
+  color: black;
+}
+
+html, body {
+  height: 100%;
+}
+
+label, .btn:focus, .btn:active {
+  outline: none !important;
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+}
+
+a {
+  background-color: transparent !important;
+}
+
 .navbar {
   position: absolute;
-  z-index: 100;
+  z-index: 2;
+  margin-top: 1rem;
   width: 100%;
-  background: rgba(66, 66, 66, 0.5);
-  margin-top: 25px;
+  min-height: 3.5em;
+  background-color: rgba(12, 8, 8, 0.5);
 }
 
 .navbar .nav-link {
   color: white !important;
+  margin-left: 1em;
+  margin-right: 1em;
+  font-size: 1.2em;
+}
+
+.navbar ul.nav a:hover {
+  color: #fff !important;
+}
+
+.logo {
+  float: left;
+  position: absolute;
+  background: #df5151;
+  z-index: 2;
+}
+
+.logo:after {
+  content: " ";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: #df5151;
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+  -webkit-transform: skew(-30deg, 0deg);
+  transform: skew(-30deg, 0deg);
+}
+
+@media (min-width: 360px) and (max-width: 500px) {
+  .logo {
+    float: none;
+    position: relative;
+    background: #df5151;
+    z-index: 2;
+    height: auto;
+    width: auto;
+  }
+  .logo:after {
+    display: none;
+  }
 }
 
 .carousel-item {
-  max-height: 100vh;
+  position: relative;
+  height: 100vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  background-size: cover;
+}
+
+/*Media query */
+.carousel-caption {
+  right: 5%;
+  bottom: 5em;
+  text-align: right;
+  opacity: .9;
+  max-width: 80em;
+  left: auto;
+  font-size: 2em;
+  padding: 5px;
+}
+
+@media (min-width: 360px) and (max-width: 500px) {
+  .carousel-caption {
+    text-align: center;
+    opacity: .9;
+  }
+}
+
+.btnbanner {
+  background-color: #ffe604 !important;
+  color: black !important;
+}
+
+a {
+  -webkit-text-decoration: "none" !important;
+          text-decoration: "none" !important;
+}
+
+/* Cartas de los entrenadores*/
+.card-container {
+  -webkit-perspective: 700px;
+          perspective: 700px;
+  display: -ms-grid;
+  display: grid;
+  font-size: 15px;
+}
+
+.card-flip, .card-container {
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+}
+
+.card-flip div {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.back {
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+
+.card-container:hover .card-flip {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.card-flip {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr;
+  -ms-grid-columns: 1fr;
+      grid-template: 1fr / 1fr;
+      grid-template-areas: "frontAndBack";
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+}
+
+.front {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: frontAndBack;
+}
+
+.back {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: frontAndBack;
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+
+.img {
+  height: 250px;
+  width: 250px;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.owl-theme .owl-dots, .owl-theme .owl-nav {
+  text-align: center;
+  -webkit-tap-highlight-color: transparent;
+  display: none !important;
+}
+
+@media (min-width: 360px) and (max-width: 500px) {
+  .mapsmediaquery {
+    width: auto;
+    height: auto;
+  }
+}
+
+.politicas {
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+
+.elem, .elem * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0 !important;
+}
+
+.elem {
+  display: inline-block;
+  font-size: 0;
+  width: 33%;
+  border: 0px solid transparent;
+  border-bottom: none;
+  background: #fff;
+  padding: 0px;
+  height: auto;
+  background-clip: padding-box;
+}
+
+.elem > span {
+  display: block;
+  cursor: pointer;
+  height: 0;
+  padding-bottom: 70%;
+  background-size: cover;
+  background-position: center center;
+}
+
+.lcl_fade_oc.lcl_pre_show #lcl_overlay,
+.lcl_fade_oc.lcl_pre_show #lcl_window,
+.lcl_fade_oc.lcl_is_closing #lcl_overlay,
+.lcl_fade_oc.lcl_is_closing #lcl_window {
+  opacity: 0 !important;
+}
+
+.lcl_fade_oc.lcl_is_closing #lcl_overlay {
+  -webkit-transition-delay: .15s !important;
+  transition-delay: .15s !important;
+}
+
+.iframe-container {
+  overflow: hidden;
+  padding-top: 56.25%;
   position: relative;
 }
 
-.carousel-item .carousel-caption {
+.iframe-container iframe {
+  border: 0;
+  height: 100%;
+  left: 0;
   position: absolute;
-  width: auto !important;
-  right: 5%;
-  left: auto !important;
-  bottom: 20%;
-  text-align: right;
-  background: rgba(255, 99, 71, 0.5);
+  top: 0;
+  width: 100%;
 }
 
-.carousel-item .carousel-caption h5 {
-  width: auto !important;
-  padding: 0 0.5em !important;
-  text-transform: uppercase;
-  font-size: 2.5em;
-  font-weight: 700;
-}
-
-.carousel-item .carousel-caption p {
-  width: auto !important;
-  padding: 0 1.5em !important;
-}
-
-.carousel-item .carousel-caption .btn {
-  border-radius: 0 !important;
-}
-
-.carousel-item img {
-  max-height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+/* 4x3 Aspect Ratio */
+.iframe-container-4x3 {
+  padding-top: 75%;
 }
 /*# sourceMappingURL=main.css.map */

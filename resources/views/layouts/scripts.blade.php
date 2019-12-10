@@ -9,3 +9,16 @@
 
 {{-- main JS --}}
 <script src="./js/main.js"></script>
+
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+<!-- Place your kit's code here -->
+<script src="https://kit.fontawesome.com/8171a85772.js" crossorigin="anonymous"></script>
+
+
+
+<script src="lib/jquery.js" type="text/javascript"></script>
+
+<script src="js/lc_lightbox.lite.js" type="text/javascript"></script>
+
+<script src="lib/AlloyFinger/alloy_finger.min.js" type="text/javascript"></script>

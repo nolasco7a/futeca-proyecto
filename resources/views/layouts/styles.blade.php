@@ -6,5 +6,23 @@
 <link rel="stylesheet" href="./css/owl.theme.default.min.css">
 <link rel="stylesheet" href="./css/owl.theme.green.min.css">
 
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+
+{{-- Contact Form --}}
+
+
 {{-- main estilos --}}
 <link rel="stylesheet" href="./css/main.min.css">
+
+
+
+<link rel="stylesheet" href="css/lc_lightbox.css" />
+
+
+<!-- SKINS -->
+<link rel="stylesheet" href="skins/minimal.css" />
+
+
+<!-- ASSETS -->
+
