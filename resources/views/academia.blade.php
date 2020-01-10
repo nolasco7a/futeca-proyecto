@@ -9,32 +9,38 @@
             <div class="carousel-item active" style="background-image: url('./assets/images/academia/academiabanner.jpg')">
             <div class="carousel-caption d-none d-md-block">
                 <h1 class="bg-danger text-white font-weight-bold">FUTECA ACADEMIA</h1>
-                <a href="{{route('contactanos')}}" type="button" class="btnbanner">INSCRIBETE</a>
+                <a href="" class="btn-futeca d-flex">
+                    <div class="ml-2 mt-1">INSCRÍBETE</div>
+                    <div class="after"></div>
+                    <span>></span>
+                  </a>
             </div>
             </div>
         </div>
     </div>
 </section>
 
-
-
-<section class=""> 
-    <div class="container-fluid text-white" style="background:black">
-        <div class="row">
-            <div class="col-sm-12 col-lg-6 p-0 ">
-                <img src="./assets/images/academia/academiaslogan.jpg" style="object-fit:cover; width:100%; height:450px" alt="">
-            </div>
-            <div class="col-sm-12 col-lg-6 pt-5"> 
-                <h1 class="text-weight-bold">Futeca Academia</h1>
-                <p class="text-justify">Somos un centro especializado en la enseñanza del futbol para niños y niñas en edades de 3 a 18 años. 
-                        Aquí aprenden las diferentes tácticas y estrategias de este deporte, técnica, disciplina y el fundamento de trabajar en equipo. Participan en torneos locales, nacionales, regionales e internacionales. 
-                        Asimismo, se realizan viajes al interior del país para jugar partidos amistosos para hacer amistades y al mismo tiempo conocer Honduras. Los alumnos son clasificados de acuerdo con su año de nacimiento en categorías, 
-                        desde la U-4 hasta la U-18. Contamos con horario semanal y horario sabatino.   
-                </p>
-            </div>
+<section>
+    <div class="row our-family d-flex align-items-center">
+      <div class="col-lg-6">
+        <div class="text-our-family">
+        <h1><span>futeca</span> academia</h1>
+        <p class="">Academia de Futbol Futeca dedicada al desarrollo del futbol, tanto formativo, recreativo y competitivo en diferentes segmentos de la sociedad. Ofrecemos exclusivamente el desarrollo y formación de: habilidades motrices básicas, cualidades físicas especiales, fundamentos técnicos y tácticos, habilidades cognitivas y valores.</p>
+          
+        <p class="text-justify">Somos un centro especializado en la enseñanza del futbol para niños y niñas en edades de 3 a 18 años. 
+            Aquí aprenden las diferentes tácticas y estrategias de este deporte, técnica, disciplina y el fundamento de trabajar en equipo. Participan en torneos locales, nacionales, regionales e internacionales. 
+            Asimismo, se realizan viajes al interior del país para jugar partidos amistosos para hacer amistades y al mismo tiempo conocer Honduras. Los alumnos son clasificados de acuerdo con su año de nacimiento en categorías, 
+            desde la U-4 hasta la U-18. Contamos con horario semanal y horario sabatino.   
+        </p>    
         </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="text-our-family" >
+          <img src="./assets/images/cancha2.jpg" class="img-fluid" alt="">
+        </div>
+      </div>
     </div>
-</section>
+  </section>
 
 
 <section>

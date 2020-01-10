@@ -8,7 +8,11 @@
             <div class="carousel-item active" style="background-image: url('./assets/images/alquileres/canchabanner.jpeg')">
             <div class="carousel-caption d-none d-md-block">
                 <h1 class="bg-danger text-white font-weight-bold">RESERVA TU CANCHA</h1>
-                <a href="{{route('contactanos')}}" type="button" class="btnbanner">CONTACTANOS</a>
+                <a href="" class="btn-futeca d-flex">
+                    <div class="ml-2 mt-1">CONTACTANOS</div>
+                    <div class="after"></div>
+                    <span>></span>
+                  </a>
             </div>
             </div>
         </div>

@@ -1,5 +1,26 @@
+/* Fonts Assets */
 @import url("https://fonts.googleapis.com/css?family=Oswald&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@font-face {
+  font-family: "futura extrabold";
+  src: url("../assets/fonts/FuturaStd-ExtraBold.otf");
+}
+
+@font-face {
+  font-family: "futura bold";
+  src: url("../assets/fonts/FuturaStd-Bold.otf");
+}
+
+@font-face {
+  font-family: "futura book";
+  src: url("../assets/fonts/FuturaStd-Book.otf");
+}
+
+@font-face {
+  font-family: "futura heavy";
+  src: url("../assets/fonts/FuturaStd-Heavy.otf");
+}
+
 body {
   font-family: 'roboto', sans-serif;
   font-size: 18px;
@@ -9,6 +30,30 @@ body {
 
 html, body {
   height: 100%;
+}
+
+h1 {
+  font-family: 'futura heavy';
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #3e3e3e !important;
+}
+
+h2 {
+  font-size: 1.5rem !important;
+  font-family: 'futura heavy';
+}
+
+h3 {
+  font-size: 1.25rem !important;
+  font-family: 'futura heavy';
+}
+
+p {
+  font-size: .90rem;
+  line-height: 20px;
+  font-family: 'futura book';
+  margin-top: 1rem;
 }
 
 label, .btn:focus, .btn:active {
@@ -98,21 +143,90 @@ a {
   padding: 5px;
 }
 
-@media (min-width: 360px) and (max-width: 500px) {
-  .carousel-caption {
-    text-align: center;
-    opacity: .9;
-  }
+.carousel-caption h1 {
+  padding: .75rem 1rem;
+  font-family: 'futura heavy';
 }
 
-.btnbanner {
-  background-color: #ffe604 !important;
-  color: black !important;
+.btn-futeca {
+  font-size: .80rem !important;
+  background: #ffe604 !important;
+  font-weight: 600;
+  color: #3e3e3e !important;
+  border: 1px solid grey;
+  width: 140px;
+  height: 40px;
+  padding: 0;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  position: relative;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
 }
 
-a {
-  -webkit-text-decoration: "none" !important;
-          text-decoration: "none" !important;
+.btn-futeca .after {
+  height: 117px;
+  -webkit-transform: rotate(35deg);
+  transform: rotate(35deg);
+  width: 40px;
+  background: #3e3e3e !important;
+  color: #ffe604 !important;
+  margin-top: -25px;
+  position: absolute;
+  right: 0px;
+}
+
+.btn-futeca span {
+  position: absolute;
+  right: 8px;
+  top: 3px;
+  color: #ffe604 !important;
+  font-size: 1.5rem;
+  font-family: 'futura book';
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.btn-futeca:hover {
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  text-decoration: none;
+}
+
+.btn-futeca:hover span {
+  right: 4px;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.our-family {
+  background: url("../assets/images/our-family-background.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.our-family .text-our-family {
+  padding: 3rem;
+}
+
+.our-family h1 {
+  color: white;
+}
+
+.our-family h1 span {
+  color: tomato;
+}
+
+.name-staff h2 {
+  color: white;
+  text-align: right;
+}
+
+.description-staff p {
+  font-size: .70rem !important;
 }
 
 /* Cartas de los entrenadores*/

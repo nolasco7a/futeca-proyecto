@@ -28,7 +28,7 @@
               <a class="nav-link" href="{{route('torneos')}}">Torneos</a>
             </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{route('contactanos')}}">Contactanos</a>
+          <a class="nav-link" href="{{route('contactanos')}}">Contáctanos</a>
         </li>
       </ul>
     </div>

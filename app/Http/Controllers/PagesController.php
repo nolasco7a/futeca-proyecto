@@ -31,9 +31,9 @@ class PagesController extends Controller
     }
 
     public function palco() {
-        $Galeriapalco = App\Galeriapalco::all();
+        /* $Galeriapalco = App\Galeriapalco::all(); */
 
-        return view('palco',compact('Galeriapalco'));
+        return view('palco'/* ,compact('Galeriapalco') */);
     }
 
     public function torneos() {

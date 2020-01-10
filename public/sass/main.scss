@@ -1,3 +1,21 @@
+/* Fonts Assets */
+@font-face{
+    font-family: "futura extrabold";
+    src: url('../assets/fonts/FuturaStd-ExtraBold.otf');
+}
+@font-face{
+    font-family: "futura bold";
+    src: url('../assets/fonts/FuturaStd-Bold.otf');
+}
+@font-face{
+    font-family: "futura book";
+    src: url('../assets/fonts/FuturaStd-Book.otf');
+}
+@font-face{
+    font-family: "futura heavy";
+    src: url('../assets/fonts/FuturaStd-Heavy.otf');
+}
+
 @import 'variables';
 @import 'commons';
 @import 'navbar';

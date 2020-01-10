@@ -11,7 +11,6 @@
 |
 */
 
-
 Route::get('/','PagesController@index')->name('index');
 
 Route::get('academia', 'PagesController@academia')->name('academia');
@@ -27,5 +26,7 @@ Route::get('contactanos', 'ContactFormController@create')->name('contactanos');
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
+
+
 
 

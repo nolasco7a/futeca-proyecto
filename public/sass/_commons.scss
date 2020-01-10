@@ -13,7 +13,26 @@ body{
 html, body {
     height:100%;
 }
-
+h1{
+    font-family: 'futura heavy';
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: $color4-futeca;
+}
+h2{
+    font-size: 1.5rem !important;
+    font-family: 'futura heavy';
+    }
+h3{
+    font-size: 1.25rem !important;
+    font-family: 'futura heavy';
+    }
+p{
+    font-size: .90rem;
+    line-height: 20px;
+    font-family: 'futura book';
+    margin-top: 1rem;
+}
 
 label, .btn:focus,.btn:active {
     outline: none !important;
