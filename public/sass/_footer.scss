@@ -1,0 +1,34 @@
+.footer{
+    background: $color4-futeca;
+}
+.nav-footer{
+    width: auto;
+    .nav-item{
+        .nav-link{
+            color: grey;
+            transition: all .5s ease;
+            font-size: .9rem;
+            &:hover{
+                color: white;
+                transition: all .5s ease;
+            }
+        }
+    }
+}
+
+.img-footer{
+    width: 125px;
+    height: auto;
+    padding: .75rem;
+}
+.icon-footer{
+    color: white !important;
+    text-decoration: none;
+    transition: all .5s ease;
+    &:hover{
+        transition: all .5s ease;
+        text-decoration: none;
+        color: white;
+    }
+}
+

@@ -1,7 +1,13 @@
 @extends('layouts.template')
 @section('content')
-
-<section>
+<section class="banner">
+    <div class="principal-banner d-flex justify-content-center align-items-center">
+        <img src="./assets/images/alquileres/canchabanner.jpeg" alt="">
+        <div class="overlay"></div>
+        <h1>Reserva tu cancha</h1>
+    </div>
+</section>
+{{-- <section>
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner" role="listbox">
             <!-- Slide One - Set the background image for this slide in the line below -->
@@ -9,7 +15,7 @@
             <div class="carousel-caption d-none d-md-block">
                 <h1 class="bg-danger text-white font-weight-bold">RESERVA TU CANCHA</h1>
                 <a href="" class="btn-futeca d-flex">
-                    <div class="ml-2 mt-1">CONTACTANOS</div>
+                    <div class="ml-2 mt-1">CONTÁCTANOS</div>
                     <div class="after"></div>
                     <span>></span>
                   </a>
@@ -17,48 +23,61 @@
             </div>
         </div>
     </div>
-</section>
-
+</section> --}}
 <section>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-12 col-lg-6 p-0 ">
-                <img src="./assets/images/alquileres/FUT7.jpg" style="object-fit:cover; width:100%; height: 400px" alt="">
-            </div>
-            <div class="col-sm-12 col-lg-6 pt-5">
-                <h1 class="pb-4 text-center">FUT7 - 2 Canchas</h1>
-                <p class="text-justify"> Siendo los pioneros en introducir el campo FUT7, permitiendo jugar con 8 o 9 jugadores por equipo. 
+    <div class="container">
+        <h1 class="font-weight-bold py-3 text-center">Canchas</h1> 
+        <div class="card mb-3">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img src="./assets/images/alquileres/FUT7.jpg" class="card-img" style="padding: 1rem; border-radius: 20px" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">FUT7 - 2 Canchas</h5>
+                  <p class="card-text">Siendo los pioneros en introducir el campo FUT7, permitiendo jugar con     8 ó 9 jugadores por equipo. 
                     La mismas están equipadas con grama sintética de la más alta tecnología de punta. 
-                    Asimismo, cuentan con la iluminación adecuada para que pueda desarrollar el mejor futbol que hay en ti. 
-                    Las canchas FUT7 tienen una medida de 33 x 52 metros cada una.
-                </p>
-            </div>        
-        </div>
+                    Asimismo, cuentan con la iluminación adecuada para que pueda desarrollar el mejor fútbol que hay en ti. 
+                    Las canchas FUT7 tienen una medida de 33 x 52 metros cada una.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="row no-gutters">
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">FUT7 - 2 Canchas</h5>
+                  <p class="card-text">La mismas están equipadas con grama sintética de la más alta tecnología de punta. 
+                    Asimismo, cuentan con la iluminación adecuada para que pueda desarrollar el mejor fútbol que hay en ti. 
+                    Las canchas FUT5 tienen una medida de 21 x 40 metros cada una.</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <img src="./assets/images/alquileres/FUT5.jpeg" class="card-img" style="padding: 1rem; border-radius: 20px" alt="...">
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img src="./assets/images/alquileres/FUT5.jpeg" class="card-img" style="padding: 1rem; border-radius: 20px" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">FUT5 - 3 Canchas</h5>
+                  <p class="card-text">La mismas están equipadas con grama sintética de la más alta tecnología de punta. 
+                    Asimismo, cuentan con la iluminación adecuada para que pueda desarrollar el mejor fútbol que hay en ti. 
+                    Las canchas FUT5 tienen una medida de 21 x 40 metros cada una.</p>
+                </div>
+              </div>
+            </div>
+          </div>
     </div>
 </section>
-
-
 <section>
-        <div class="container-fluid" style="background:black">
-            <div class="row">
-                <div class="col-sm-12 col-lg-6 p-0 ">
-                    <img src="./assets/images/alquileres/FUT5.jpeg" style="object-fit:cover; width:100%; height: 400px" alt="">
-                </div>
-                <div class="col-sm-12 col-lg-6 pt-5 text-white">
-                    <h1 class="pb-4 text-center">FUT5 - 3 Canchas</h1>
-                    <p class="text-justify"> 
-                        La mismas están equipadas con grama sintética de la más alta tecnología de punta. 
-                        Asimismo, cuentan con la iluminación adecuada para que pueda desarrollar el mejor futbol que hay en ti. 
-                        Las canchas FUT5 tienen una medida de 21 x 40 metros cada una.
-                    </p>
-                </div>        
-            </div>
-        </div>
-</section>
-
-<section>
-    <div class="container-fluid bg-light ">  
-        <h1 class="font-weight-bold pt-5 pb-2">Galeria de las canchas disponibles</h1>              
+    <div class="container bg-light ">  
+        <h1 class="font-weight-bold pt-5 pb-4 text-center">Galería de las canchas disponibles</h1>              
         <div class="content">
             @foreach($Galeriacanchas as $item)
             @php
@@ -95,10 +114,10 @@
    <div class="row"> 
    <div class="col-12 pt-3 pl-5 pr-5"> 
             <h1>Alquileres</h1>
-            <p class="text-justify"> Contamos con 5 canchas de futbol. Dos canchas FUT7 y tres canchas FUT5. 
+            <p class="text-justify"> Contamos con 5 canchas de fútbol. Dos canchas FUT7 y tres canchas FUT5. 
             Siendo los pioneros en introducir el campo FUT7, permitiendo jugar con 8 o 9 jugadores por equipo. 
             La mismas están equipadas con grama sintética de la más alta tecnología de punta. 
-            Asimismo, cuentan con la iluminación adecuada para que pueda desarrollar el mejor futbol que hay en ti. 
+            Asimismo, cuentan con la iluminación adecuada para que pueda desarrollar el mejor fútbol que hay en ti. 
             Las canchas FUT7 tienen una medida de 33 x 52 metros y las canchas FUT5 una medida de 21 x 40 metros cada una.  
             Arrendamos por hora las canchas a personas naturales, empresas, colegios, universidades o equipos que deseen organizar juegos o entrenamientos.
              Abiertos de lunes a domingo de 8:00am – 10:00pm. También abrimos días feriados. 
@@ -120,7 +139,7 @@
                      Puedes disfrutar de desayunos como ser: baleadas, pan con frijoles, croissant, burritas. 
                      También ofrecemos: sándwiches de jamón y queso, sándwiches de pollo y pizzas.
                      Puedes acompañarlo de un refresco, agua, jugo, bebida hidratante o energizante y café de tu elección. 
-                     Nuestro PALCO esta equipado con 5 pantallas para que puedas observar con tus amigos de los partidos de futbol, noticieros o cualquier programa que deseen. Para aquellos que aprovechan su tiempo les ofrecemos wifi gratis por consumo. Después de jugar una buena potra puedes compartir de una cerveza bien helada. Gracias a nuestros patrocinadores: PEPSI, GATORADE, AGUAZUL, YUMMIES y TECATE. 
+                     Nuestro PALCO esta equipado con 5 pantallas para que puedas observar con tus amigos de los partidos de fútbol, noticieros o cualquier programa que deseen. Para aquellos que aprovechan su tiempo les ofrecemos wifi gratis por consumo. Después de jugar una buena potra puedes compartir de una cerveza bien helada. Gracias a nuestros patrocinadores: PEPSI, GATORADE, AGUAZUL, YUMMIES y TECATE. 
                      Nuestras instalaciones cuentan con seguridad y estacionamiento. 
                 </p>
             </div>

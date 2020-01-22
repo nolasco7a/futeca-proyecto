@@ -1,16 +1,26 @@
 .navbar{
-    position: absolute;
-    z-index: 2;
-    margin-top: 1rem;
+    position: fixed;
+    top: 0;
     width:100%;
-    min-height:3.5em;
-    background-color: rgba(12, 8, 8, .5);
+    min-height:2em;
+    background-color: $color4-futeca;       
 
     .nav-link{
-        color:white !important;
-        margin-left: 1em;
-        margin-right: 1em;
-        font-size: 1.2em;
+    text-decoration: none;
+    background-image: linear-gradient(white, white);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+    color: white !important;
+    font-size: .75rem;
+    font-family: 'roboto';
+    letter-spacing: 2px;
+    &:hover, &:focus{
+        background-size: 100% 2px;
+        color: white !important;
+    }
+
     }
 
     ul.nav a:hover { color: #fff !important; }
@@ -18,11 +28,11 @@
 .logo {
     float:left;
     position: absolute;
-    background:rgb(223, 81, 81);
+    /* background:rgb(223, 81, 81); */
     z-index: 2;
 }
 
-.logo:after {
+/* .logo:after {
     content: " ";
     position: absolute;
     display: block;
@@ -36,13 +46,13 @@
     -ms-transform: skew(-30deg, 0deg);
     -webkit-transform: skew(-30deg, 0deg);
     transform: skew(-30deg, 0deg);
-}
+} */
 
 @media (min-width:360px) and (max-width:500px) {
     .logo {
         float:none;
         position:relative;
-        background:rgb(223, 81, 81);
+        /* background:rgb(223, 81, 81); */
         z-index: 2;
         height:auto;
         width:auto

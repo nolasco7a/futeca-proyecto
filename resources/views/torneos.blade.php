@@ -8,7 +8,7 @@
             <div class="carousel-caption d-none d-md-block">
                 <h1 class="bg-danger text-white font-weight-bold">FUTECA TORNEOS</h1>
                 <a href="" class="btn-futeca d-flex">
-                    <div class="ml-2 mt-1">CONTACTANOS</div>
+                    <div class="ml-2 mt-1">CONTÁCTANOS</div>
                     <div class="after"></div>
                     <span>></span>
                   </a>
@@ -18,15 +18,16 @@
     </div>
 </section>
 
-<section>
+<section style="overflow-x:hidden">
     <div class="row our-family d-flex align-items-center">
       <div class="col-lg-6">
         <div class="text-our-family">
         <h1><span>TORNEOS</span> EMPRESARIALES</h1>
         <p class="text-justify">
-            Futeca también es reconocido como el único en organizar, calendarizar y llevar el control estadístico de campeonatos. 
-            Nuestros torneos ofrecen: congresillo técnico, ceremonia de inauguración, calendario de juegos, árbitros, delegados, control de estadísticas, tabla de posiciones, medallas, trofeos y ceremonia de clausura. 
-            Nos adaptamos a tus necesidades y presupuesto. Nuestra cartera de clientes esta conformado por: 
+            Futeca también es reconocido como el único en organizar, calendarizar y llevar el control estadístico de campeonatos. Nuestros torneos ofrecen: congresillo técnico, ceremonia de inauguración, calendario de juegos, árbitros, delegados, control de estadísticas, tabla de posiciones, medallas, trofeos y ceremonia de clausura. Nos adaptamos a tus necesidades y presupuesto.
+            <br>
+            <br>
+             Nuestra cartera de clientes esta conformado por: 
             Banco Ficohsa, Inversiones La Paz, INTUR, UNICOMER, Super Liga Claro, Empresarial Femenino FUT5, Empresarial masculino FUT7, Corporación Flores, Sagrada Familia, entre otros. 
         </p> 
         </div>

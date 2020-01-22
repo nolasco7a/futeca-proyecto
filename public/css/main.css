@@ -66,20 +66,136 @@ a {
   background-color: transparent !important;
 }
 
-.navbar {
-  position: absolute;
-  z-index: 2;
+/* 
+
+.date-card{
+    width: 40%;
+    font-size: 1rem !important;
+    color: white;
+    background:$color3-futeca;
+    margin-left: 30%;
+    text-align: center;
+} */
+.card .card-img-top {
+  border-radius: 5px;
+}
+
+.card .card-title {
+  font-family: 'futura book';
+  color: #3e3e3e !important;
   margin-top: 1rem;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+
+.card .card-date {
+  text-align: center;
+  font-size: .6rem !important;
+  padding-top: .5rem;
+  color: grey;
+  font-family: 'futura book';
+}
+
+.card .separator-title {
+  background: #c7c7c7;
+  margin-bottom: .75rem;
+  width: 10%;
+  height: 4px;
+  margin-left: 45%;
+  border-radius: 10px;
+}
+
+.card-shadow {
+  -webkit-box-shadow: 10px 10px 24px -12px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 24px -12px rgba(0, 0, 0, 0.75);
+}
+
+.h1-span {
+  color: #df5151 !important;
+}
+
+.banner .principal-banner {
+  position: relative;
+}
+
+.banner .principal-banner img {
+  height: 80vh;
   width: 100%;
-  min-height: 3.5em;
-  background-color: rgba(12, 8, 8, 0.5);
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.banner .principal-banner .overlay {
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+}
+
+.banner .principal-banner h1 {
+  position: absolute;
+  color: white !important;
+  font-family: 'futura heavy';
+  font-size: 3rem;
+  letter-spacing: 30px;
+  text-align: center;
+  width: 100%;
+  top: 40%;
+}
+
+@media (max-width: 767.98px) {
+  .banner .principal-banner h1 {
+    font-size: 2.5rem;
+  }
+}
+
+.modal-header {
+  background: #df5151 !important;
+  color: #3e3e3e !important;
+  font-family: 'futura bold';
+  padding: 1.6rem;
+}
+
+.modal-header h5 {
+  font-size: 2rem;
+  color: white;
+}
+
+.modal-body {
+  padding: 1.6rem;
+}
+
+.modal-body p {
+  font-size: 1rem;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  min-height: 2em;
+  background-color: #3e3e3e !important;
 }
 
 .navbar .nav-link {
+  text-decoration: none;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(white));
+  background-image: linear-gradient(white, white);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  -webkit-transition: background-size .3s;
+  transition: background-size .3s;
   color: white !important;
-  margin-left: 1em;
-  margin-right: 1em;
-  font-size: 1.2em;
+  font-size: .75rem;
+  font-family: 'roboto';
+  letter-spacing: 2px;
+}
+
+.navbar .nav-link:hover, .navbar .nav-link:focus {
+  background-size: 100% 2px;
+  color: white !important;
 }
 
 .navbar ul.nav a:hover {
@@ -89,31 +205,30 @@ a {
 .logo {
   float: left;
   position: absolute;
-  background: #df5151;
+  /* background:rgb(223, 81, 81); */
   z-index: 2;
 }
 
-.logo:after {
-  content: " ";
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  background: #df5151;
-  -webkit-transform-origin: bottom left;
-          transform-origin: bottom left;
-  -webkit-transform: skew(-30deg, 0deg);
-  transform: skew(-30deg, 0deg);
-}
-
+/* .logo:after {
+    content: " ";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background:rgb(223, 81, 81);
+    transform-origin: bottom left;
+    -ms-transform: skew(-30deg, 0deg);
+    -webkit-transform: skew(-30deg, 0deg);
+    transform: skew(-30deg, 0deg);
+} */
 @media (min-width: 360px) and (max-width: 500px) {
   .logo {
     float: none;
     position: relative;
-    background: #df5151;
+    /* background:rgb(223, 81, 81); */
     z-index: 2;
     height: auto;
     width: auto;
@@ -202,14 +317,75 @@ a {
   transition: all .2s ease;
 }
 
+.btn-futeca-2 {
+  font-size: .80rem !important;
+  background: #df5151 !important;
+  font-weight: 600;
+  color: white;
+  border: 1px solid grey;
+  width: 140px;
+  height: 40px;
+  padding: 0;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  position: relative;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.btn-futeca-2 .after {
+  height: 117px;
+  -webkit-transform: rotate(35deg);
+  transform: rotate(35deg);
+  width: 40px;
+  background: #3e3e3e !important;
+  color: white;
+  margin-top: -25px;
+  position: absolute;
+  right: 0px;
+}
+
+.btn-futeca-2 span {
+  position: absolute;
+  right: 8px;
+  top: 3px;
+  color: #df5151 !important;
+  font-size: 1.5rem;
+  font-family: 'futura book';
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.btn-futeca-2:hover {
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  text-decoration: none;
+  color: white;
+}
+
+.btn-futeca-2:hover span {
+  right: 4px;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
 .our-family {
   background: url("../assets/images/our-family-background.png");
   background-size: cover;
   background-position: center;
+  max-width: 105vw;
 }
 
 .our-family .text-our-family {
   padding: 3rem;
+}
+
+.our-family .text-our-family p {
+  color: #e9d10a;
+  mix-blend-mode: difference;
 }
 
 .our-family h1 {
@@ -217,7 +393,7 @@ a {
 }
 
 .our-family h1 span {
-  color: tomato;
+  color: #df5151 !important;
 }
 
 .name-staff h2 {
@@ -310,6 +486,47 @@ a {
     width: auto;
     height: auto;
   }
+}
+
+.footer {
+  background: #3e3e3e !important;
+}
+
+.nav-footer {
+  width: auto;
+}
+
+.nav-footer .nav-item .nav-link {
+  color: grey;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  font-size: .9rem;
+}
+
+.nav-footer .nav-item .nav-link:hover {
+  color: white;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.img-footer {
+  width: 125px;
+  height: auto;
+  padding: .75rem;
+}
+
+.icon-footer {
+  color: white !important;
+  text-decoration: none;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.icon-footer:hover {
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  text-decoration: none;
+  color: white;
 }
 
 .politicas {

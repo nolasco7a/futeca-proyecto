@@ -12,9 +12,10 @@ class PagesController extends Controller
         $Staff = App\Staff::all();
         $Patrocinadores = App\Patrocinadores::all();
         $Eventos = App\Eventos::all();
+        $noticias = App\Noticia::take(3)->get();
 
         /*dd($Patrocinadores,$Staff);*/
-        return view('index',compact('Staff', 'Patrocinadores','Eventos'));
+        return view('index',compact('Staff', 'Patrocinadores','Eventos', 'noticias'));
     }
 
     public function academia() {

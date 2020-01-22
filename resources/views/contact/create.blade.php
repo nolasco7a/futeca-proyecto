@@ -8,7 +8,7 @@
   <div class="container" style="position: relative" >
 	<div class="row " style="padding-top:150px ">
 		<div class="col-sm-12 col-lg-7">
-			<h1 class="text-white">CONTACTANOS</h1>
+			<h1 class="text-white">CONTÁCTANOS</h1>
 			<div class="form">
 					<div class="">
 							<div class="form-top">

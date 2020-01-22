@@ -41,3 +41,99 @@ label, .btn:focus,.btn:active {
  }
 
 a {background-color:transparent !important;}
+
+/* 
+
+.date-card{
+    width: 40%;
+    font-size: 1rem !important;
+    color: white;
+    background:$color3-futeca;
+    margin-left: 30%;
+    text-align: center;
+} */
+
+.card{
+    .card-img-top{
+        border-radius: 5px;
+    }
+    .card-title{
+        font-family: 'futura book';
+        color: $color4-futeca;
+        margin-top: 1rem;
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+    }
+    .card-date{
+        text-align: center;
+        font-size: .6rem !important;
+        padding-top: .5rem;
+        color: grey;
+        font-family: 'futura book';
+    }
+    .separator-title{
+        background: rgb(199, 199, 199);
+        margin-bottom: .75rem;
+        width: 10%;
+        height: 4px;
+        margin-left: 45%;
+        border-radius: 10px;
+    }
+
+}
+.card-shadow{
+    -webkit-box-shadow: 10px 10px 24px -12px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 24px -12px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 24px -12px rgba(0,0,0,0.75);
+}
+
+.h1-span{
+    color: $color5-futeca;
+}
+
+.banner{
+    .principal-banner{
+        position: relative;
+        img{
+            height: 80vh;
+            width: 100%;
+            object-fit: cover;
+        }
+        .overlay{
+            height: 100%;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.400);
+            position: absolute;
+            top: 0;    
+        }
+        h1{
+            position: absolute;
+            color: white !important;
+            font-family: 'futura heavy';
+            font-size: 3rem;
+            letter-spacing: 30px;
+            text-align: center;
+            width: 100%;
+            top: 40%;
+            @media (max-width: 767.98px) { 
+                font-size: 2.5rem;
+            }
+        }
+    }
+}
+.modal-header{
+    background: $color5-futeca;
+    color: $color4-futeca;
+    font-family: 'futura bold';
+    padding: 1.6rem;
+    h5{
+        font-size: 2rem;
+        color: white;
+    }
+}
+.modal-body{
+    padding: 1.6rem;
+    p{
+        font-size: 1rem;
+    }
+}
