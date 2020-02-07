@@ -23,6 +23,8 @@ Route::get('torneos', 'PagesController@torneos')->name('torneos');
 
 Route::get('contactanos', 'ContactFormController@create')->name('contactanos');
 
+Route::post('contactanos','ContactFormController@store')->name('conatactanos');
+
 Route::get('blog', 'blogController@getBlog')->name('blog');
 
 Route::group(['prefix' => 'admin'], function () {

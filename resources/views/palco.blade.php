@@ -41,6 +41,13 @@
       </div>
     </div>
   </section>
+
+
+  <section class="" >
+    <div class="container" style="position: relative">
+</div>
+   
+ 
 {{-- <section>
         <div class="container-fluid bg-light ">   
             <h1 class="font-weight-bold pt-5 pb-2">Galeria Futeca Palco</h1>              

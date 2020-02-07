@@ -105,6 +105,12 @@ a {
   border-radius: 10px;
 }
 
+@media (max-width: 767.98px) {
+  .card {
+    margin: 10px;
+  }
+}
+
 .card-shadow {
   -webkit-box-shadow: 10px 10px 24px -12px rgba(0, 0, 0, 0.75);
   box-shadow: 10px 10px 24px -12px rgba(0, 0, 0, 0.75);
@@ -119,7 +125,7 @@ a {
 }
 
 .banner .principal-banner img {
-  height: 80vh;
+  height: 88vh;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -146,7 +152,7 @@ a {
 
 @media (max-width: 767.98px) {
   .banner .principal-banner h1 {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -171,7 +177,7 @@ a {
 }
 
 .navbar {
-  position: fixed;
+  position: inherit;
   top: 0;
   width: 100%;
   min-height: 2em;
@@ -481,10 +487,158 @@ a {
   display: none !important;
 }
 
+.text-our-family .btn-futeca {
+  font-size: .80rem !important;
+  background: rgba(0, 0, 0, 0.9) !important;
+  font-weight: 600;
+  color: #ffc107 !important;
+  border: 1px solid rgba(0, 0, 0, 0.9);
+  width: 140px;
+  height: 40px;
+  padding: 0;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  position: relative;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.text-our-family .btn-futeca .after {
+  height: 117px;
+  -webkit-transform: rotate(35deg);
+  transform: rotate(35deg);
+  width: 40px;
+  background: #dc3545 !important;
+  color: #ffe604 !important;
+  margin-top: -25px;
+  position: absolute;
+  right: 0px;
+}
+
+.contenedor1 {
+  width: auto;
+  height: 420px;
+  border: 0px solid black;
+  position: relative;
+  overflow: hidden;
+}
+
+.contenido1 {
+  width: 100%;
+  height: 100%;
+  background-color: #e9cf08;
+  -webkit-transform: skewX(-16deg) translateX(-50%);
+          transform: skewX(-16deg) translateX(-50%);
+  position: absolute;
+  z-index: 10;
+}
+
+.contenido1 .btn-futeca {
+  font-size: .80rem !important;
+  background: rgba(0, 0, 0, 0.9) !important;
+  font-weight: 600;
+  color: #ffc107 !important;
+  border: 1px solid #212529;
+}
+
+.contenido1 .btn-futeca .after {
+  background: #dc3545 !important;
+  color: #ffc107 !important;
+}
+
+.contenido1 .row2 {
+  margin-top: 4%;
+  margin-left: 52%;
+  width: 87%;
+  text-align: justify;
+  -webkit-transform: skew(16deg);
+          transform: skew(16deg);
+}
+
+.contenido1 .row2 p {
+  font-size: .90rem;
+  line-height: 20px;
+  font-family: 'futura book';
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.contenido1 .row2 h1 {
+  color: white;
+}
+
+.contenido1 .row2 h1 span {
+  color: #df5151 !important;
+  padding: 10px;
+}
+
+.contenido1 .row p {
+  font-size: 1.9rem;
+  line-height: 20px;
+  font-family: 'futura book';
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #ffe818;
+}
+
+.contenido2 {
+  width: 100%;
+  height: 100%;
+  background-color: #464545;
+  z-index: 0;
+}
+
 @media (min-width: 360px) and (max-width: 500px) {
   .mapsmediaquery {
-    width: auto;
-    height: auto;
+    width: 375px;
+    height: 285px;
+    margin: -15px;
+  }
+}
+
+.container {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.banner-contactanos .principal-banner {
+  position: relative;
+}
+
+.banner-contactanos .principal-banner img {
+  height: 88vh;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.banner-contactanos .principal-banner .overlay {
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+}
+
+.banner-contactanos .principal-banner h1 {
+  position: absolute;
+  color: #ffffff !important;
+  font-family: 'futura heavy';
+  font-size: 3rem;
+  letter-spacing: 30px;
+  text-align: center;
+  width: 100%;
+  top: 40%;
+}
+
+@media (max-width: 767.98px) {
+  .banner-contactanos .principal-banner h1 {
+    font-size: 1.4rem;
+    letter-spacing: 20px;
+    text-align: center;
   }
 }
 
@@ -529,9 +683,112 @@ a {
   color: white;
 }
 
+.banner .principal-banner img {
+  height: 88vh;
+  width: 100%;
+}
+
+.pt-5, .py-5 {
+  padding-top: 6rem !important;
+}
+
 .politicas {
   font-size: 1.2em;
   line-height: 1.5em;
+}
+
+.tab-content {
+  padding-top: 5rem;
+}
+
+.nav-tabs .nav-link.active {
+  color: #b19f13;
+  background-color: #fff;
+  border-color: #dee2e6 #dee2e6 #fff;
+}
+
+a {
+  color: rgba(0, 0, 0, 0.9);
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.uno {
+  width: auto;
+  height: 420px;
+  border: 0px solid black;
+  position: relative;
+  overflow: hidden;
+}
+
+.dos {
+  width: 100%;
+  height: 100%;
+  background-color: #e9cf08;
+  -webkit-transform: skewX(-16deg) translateX(-40%);
+          transform: skewX(-16deg) translateX(-40%);
+  position: absolute;
+  z-index: 10;
+}
+
+.dos .btn-futeca {
+  font-size: .80rem !important;
+  background: rgba(0, 0, 0, 0.9) !important;
+  font-weight: 600;
+  color: #ffc107 !important;
+  border: 1px solid #212529;
+}
+
+.dos .btn-futeca .after {
+  background: #dc3545 !important;
+  color: #ffc107 !important;
+}
+
+.row2 {
+  margin-top: 4%;
+  margin-left: 43%;
+  width: 95%;
+  text-align: justify;
+  -webkit-transform: skew(16deg);
+          transform: skew(16deg);
+}
+
+.row2 p {
+  font-size: .90rem;
+  line-height: 20px;
+  font-family: 'futura book';
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.row2 h1 {
+  color: white;
+}
+
+.row2 h1 span {
+  color: #df5151 !important;
+  padding: 10px;
+}
+
+.tres {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 0;
+  background-image: url("../assets/images/cancha2.jpg");
+  background-size: 673px;
+}
+
+.bg-info {
+  background-color: #e9cf08 !important;
+}
+
+p {
+  font-size: .90rem;
+  line-height: 20px;
+  font-family: 'futura book';
+  margin-top: 1rem;
+  color: black;
 }
 
 .elem, .elem * {
@@ -573,6 +830,10 @@ a {
   transition-delay: .15s !important;
 }
 
+.content {
+  width: 1226px;
+}
+
 .iframe-container {
   overflow: hidden;
   padding-top: 56.25%;
@@ -591,5 +852,24 @@ a {
 /* 4x3 Aspect Ratio */
 .iframe-container-4x3 {
   padding-top: 75%;
+}
+
+.pt-4, .py-4 {
+  padding-top: 0.5rem !important;
+}
+
+.contenedor {
+  width: auto;
+  height: 482px;
+  border: 0px solid black;
+  position: relative;
+  overflow: hidden;
+}
+
+.col-sm-12 col-lg-5 {
+  padding-top: 15px;
+  right: 35px;
+  left: 54%;
+  margin: -29px;
 }
 /*# sourceMappingURL=main.css.map */

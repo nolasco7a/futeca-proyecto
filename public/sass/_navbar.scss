@@ -1,5 +1,6 @@
+
 .navbar{
-    position: fixed;
+    position: inherit;
     top: 0;
     width:100%;
     min-height:2em;
@@ -21,10 +22,13 @@
         color: white !important;
     }
 
-    }
-
-    ul.nav a:hover { color: #fff !important; }
 }
+
+
+    ul.nav a:hover { color: #fff !important; 
+    }
+}
+
 .logo {
     float:left;
     position: absolute;
@@ -61,4 +65,8 @@
     .logo:after{
         display:none;
     }
-  }
+
+    
+}
+
+    

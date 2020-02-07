@@ -207,3 +207,115 @@
     -webkit-tap-highlight-color: transparent;
     display: none !important;
   }
+
+.text-our-family{
+  .btn-futeca{
+
+    font-size: .80rem !important;
+    background: rgba(0,0,0,.9) !important;
+    font-weight: 600;
+    color: #ffc107 !important;
+    border: 1px solid rgba(0,0,0,.9);
+    width: 140px;
+    height: 40px;
+    padding: 0;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-decoration: none;
+    position: relative;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+     
+    .after {
+      height: 117px;
+      -webkit-transform: rotate(35deg);
+      transform: rotate(35deg);
+      width: 40px;
+      background: #dc3545 !important;
+      color: #ffe604 !important;
+      margin-top: -25px;
+      position: absolute;
+      right: 0px;
+  }
+  }
+}
+
+.contenedor1{
+
+  width: auto;
+  height: 420px;
+border: 0px solid black;
+position: relative;
+overflow: hidden;
+
+}
+
+.contenido1{
+  width: 100%;
+    height: 100%;
+    background-color: #e9cf08;
+    transform: skewX(-16deg) translateX(-50%);
+    position: absolute;
+    z-index: 10;
+
+    .btn-futeca {
+        font-size: .80rem !important;
+        background: rgba(0,0,0,.9) !important;
+        font-weight: 600;
+        color: #ffc107 !important;
+        border: 1px solid #212529;
+    
+        .after{
+            background: #dc3545 !important;
+        color: #ffc107 !important;
+        }
+    }
+
+    .row2{
+      margin-top: 4%;
+        margin-left: 52%;
+        width: 87%;
+      text-align: justify;
+      transform: skew(16deg);
+    
+      p {
+          font-size: .90rem;
+          line-height: 20px;
+          font-family: 'futura book';
+          margin-top: 1rem;
+          font-weight: bold;
+      }
+     
+      
+          h1{
+            color: white;
+            span{
+              color: $color5-futeca;
+              padding: 10px;
+            }
+          }
+        }
+
+        .row p {
+          font-size: 1.9rem;
+          line-height: 20px;
+          font-family: 'futura book';
+          margin-top: 1rem;
+          font-weight: bold;
+          color: #ffe818;
+      }
+
+}
+
+
+
+.contenido2{
+  
+  width: 100%;
+  height: 100%;
+  background-color:#464545;
+  z-index: 0;
+  
+}

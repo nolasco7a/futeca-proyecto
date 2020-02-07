@@ -54,8 +54,10 @@ a {background-color:transparent !important;}
 } */
 
 .card{
+      
     .card-img-top{
         border-radius: 5px;
+        
     }
     .card-title{
         font-family: 'futura book';
@@ -80,11 +82,17 @@ a {background-color:transparent !important;}
         border-radius: 10px;
     }
 
+    @media (max-width: 767.98px) { 
+        margin: 10px;
+    }
+
 }
 .card-shadow{
     -webkit-box-shadow: 10px 10px 24px -12px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 24px -12px rgba(0,0,0,0.75);
     box-shadow: 10px 10px 24px -12px rgba(0,0,0,0.75);
+
+    
 }
 
 .h1-span{
@@ -95,7 +103,7 @@ a {background-color:transparent !important;}
     .principal-banner{
         position: relative;
         img{
-            height: 80vh;
+            height: 88vh;
             width: 100%;
             object-fit: cover;
         }
@@ -116,7 +124,8 @@ a {background-color:transparent !important;}
             width: 100%;
             top: 40%;
             @media (max-width: 767.98px) { 
-                font-size: 2.5rem;
+                font-size: 1.5rem;
+                
             }
         }
     }
@@ -129,6 +138,7 @@ a {background-color:transparent !important;}
     h5{
         font-size: 2rem;
         color: white;
+        
     }
 }
 .modal-body{

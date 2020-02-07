@@ -25,7 +25,7 @@
     </div>
 </section> --}}
 <section>
-    <div class="container">
+    <div class="container" style="padding-top:30px">
         <h1 class="font-weight-bold py-3 text-center">Canchas</h1> 
         <div class="card mb-3">
             <div class="row no-gutters">
