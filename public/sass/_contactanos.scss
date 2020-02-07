@@ -37,10 +37,15 @@
             width: 100%;
             top: 40%;
             @media (max-width: 767.98px) { 
-                font-size: 1.4rem;
+                font-size: 2.4rem;
                 letter-spacing: 20px;
                 text-align: center;
             }
+            @media (max-width: 576px) {
+                font-size: 1.3rem;
+                letter-spacing: 10px;
+                text-align: center;
+             }
         }
     }
     

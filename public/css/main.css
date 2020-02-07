@@ -176,6 +176,10 @@ a {
   font-size: 1rem;
 }
 
+.nav-tabs .nav-link:hover {
+  color: #3e3e3e !important;
+}
+
 .navbar {
   position: inherit;
   top: 0;
@@ -210,7 +214,6 @@ a {
 
 .logo {
   float: left;
-  position: absolute;
   /* background:rgb(223, 81, 81); */
   z-index: 2;
 }
@@ -536,6 +539,13 @@ a {
   z-index: 10;
 }
 
+@media (max-width: 992px) {
+  .contenido1 {
+    -webkit-transform: skewX(-16deg) translateX(0);
+            transform: skewX(-16deg) translateX(0);
+  }
+}
+
 .contenido1 .btn-futeca {
   font-size: .80rem !important;
   background: rgba(0, 0, 0, 0.9) !important;
@@ -636,8 +646,16 @@ a {
 
 @media (max-width: 767.98px) {
   .banner-contactanos .principal-banner h1 {
-    font-size: 1.4rem;
+    font-size: 2.4rem;
     letter-spacing: 20px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .banner-contactanos .principal-banner h1 {
+    font-size: 1.3rem;
+    letter-spacing: 10px;
     text-align: center;
   }
 }

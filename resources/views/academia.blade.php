@@ -14,7 +14,7 @@
 
 <section>
 
-  <div class="uno">
+  <div class="uno d-none d-lg-block">
     <div class="dos">
       <div class="row2 our-fanmily d-flex align-items-center">
         <div class="col-lg-6">
@@ -36,6 +36,25 @@
     </div>
     </div>
     <div class="tres"></div>
+  </div>
+
+  <div class="containr-fluid d-block d-lg-none" style="background:#ffe604">
+    <div class="container">
+      <div class="text-our-family">
+        <h1><span> ACADEMIA</span>FUTECA</h1>
+        <p class="">Academia dedicada al desarrollo del fútbol, tanto formativo, recreativo y competitivo en diferentes segmentos de la sociedad. Ofrecemos exclusivamente el desarrollo y formación de habilidades motrices básicas, cualidades físicas especiales, fundamentos técnicos y tácticos, habilidades cognitivas y valores.</p>
+      <p class="text-justify">Somos un centro especializado en la enseñanza del fútbol para niños y niñas en edades de 3 a 18 años. 
+          Aquí aprenden las diferentes tácticas y estrategias de este deporte: Técnica, disciplina y el fundamento de trabajar en equipo. Participan en torneos locales, nacionales, regionales e internacionales. 
+          Asimismo, se realizan viajes al interior del país para jugar partidos amistosos y al mismo tiempo conocer Honduras. Los alumnos son clasificados de acuerdo con su año de nacimiento en categorías, 
+          desde la U-4 hasta la U-18. Contamos con horario semanal y horario sabatino.   
+      </p> 
+      <a href="{{route('contactanos')}}" class="btn-futeca d-flex">
+        <div class="ml-2 mt-1">INSCRÍBETE</div>
+        <div class="after"></div>
+        <span>></span>
+    </a>   
+    </div>
+    </div>
   </div>
   
 </section>
@@ -161,49 +180,49 @@
     <section>
       <h1 class="text-center"><span>POLÍTICAS</span></h1> <br>
 
-      <div class="row d-flex justify-content-center" style=" margin-left: 50px;">
-      <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+      <div class="row m-0">
+      <div class="card col-lg-3 col-md-3 col-12 text-white bg-info mb-3">
         <div class="card-body">
           <p class="card-text">Para ser parte de nuestra academia el alumno debe estar inscrito y tener cancelado el mes correspondiente al momento del ingreso.</p>
         </div>
       </div>
-      <div class="card bg-light mb-3" style="max-width: 18rem; margin-left:34px;">
+      <div class="card col-lg-3 col-md-3 col-12 bg-light mb-3" >
         <div class="card-body">
           <p class="card-text">Los pagos de las mensualidades deben realizarse los primeros 10 días de cada mes.</p>
         </div>
       </div>
-      <div class="card text-white bg-info mb-3" style="max-width: 18rem; margin-left:34px;">
+      <div class="card col-lg-3 col-md-3 col-12 text-white bg-info mb-3" >
         <div class="card-body">
           <p class="card-text">En caso de no cancelar en tiempo y forma se le suspenderán los entrenos al alumno por medio de la tarjeta roja y podrá incorporarse al momento de hacer efectivo el pago.</p>
         </div>
       </div>
-      <div class="card bg-light mb-3" style="max-width: 18rem; margin-left:34px;">
+      <div class="card col-lg-3 col-md-3 col-12 bg-light mb-3" >
         <div class="card-body">
           <p class="card-text">En caso de no haber cancelado en los primeros 10 días del mes se cobrará L. 25.00 extra sobre las mensualidades.</p>
         </div>
       </div>
 
-        <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+        <div class="card col-lg-3 col-md-3 col-12 text-white bg-info mb-3" >
           <div class="card-body">
             <p class="card-text">El no notificar la ausencia de los entrenos ya sea por estudios, viajes y lesiones o estado de salud, está sujeto al pago de la mensualidad correspondiente. (Si notifica la ausencia, su mensualidad se congelará hasta su regreso).</p>
           </div>
         </div>
-        <div class="card bg-light mb-3" style="max-width: 18rem; margin-left:34px;">
+        <div class="card col-lg-3 col-md-3 col-12 bg-light mb-3" >
           <div class="card-body">
             <p class="card-text">La inasistencia consecutiva a 3 meses causará la baja de inscripción. Y al momento de regresar deberá pagar la inscripción.</p>
           </div>
         </div>
-        <div class="card text-white bg-info mb-3" style="max-width: 18rem; margin-left:34px;">
+        <div class="card col-lg-3 col-md-3 col-12 text-white bg-info mb-3" >
           <div class="card-body">
             <p class="card-text">Los alumnos para poder recibir sus entrenamientos deben portar su uniforme correspondiente. (Camisa, calzoneta, chimpas, medias y tenis tacos).</p>
           </div>
         </div>
-        <div class="card bg-light mb-3" style="max-width: 18rem; margin-left:34px;">
+        <div class="card col-lg-3 col-md-3 col-12 bg-light mb-3" >
           <div class="card-body">
             <p class="card-text">Para los torneos los alumnos tienen que ser constantes en sus entrenamientos (No es solo venir a los torneos).</p>
           </div>
         </div>
-        <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+        <div class="card col-lg-3 col-md-3 col-12 text-white bg-info mb-3" >
           <div class="card-body">
             <p class="card-text">Para poder participar en los torneos es obligatorio tener disponible los 2 uniformes de competencia, el pago de la inscripción al torneo y la mensualidad al día.</p>
           </div>

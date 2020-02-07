@@ -69,8 +69,7 @@
 </section>--}}
 
 <section>
-
-  <div class="contenedor1">
+  <div class="contenedor1 d-none d-lg-block">
     <div class="contenido1 ">
       <div class="row2 our-fanmily d-flex align-items-center">
         <div class="col-lg-6">
@@ -88,7 +87,7 @@
       <div class="col-lg-6" style="margin-left: 89px;">
         <div class="text-our-family" >
           <h3 class="text-center text-white pb-2 {{-- mr-4 --}}">ENTRENADORES</h3>
-          <div class="owl-carousel owl-theme" id="staff">
+          <div class="owl-carousel owl-theme staff" id="">
             @foreach ($Staff as $item)
                 <div class="row">
                   <div class="name-staff d-flex align-items-end col-12 col-sm-4 col-md-4 col-lg-4">
@@ -106,12 +105,47 @@
         </div>
       </div>
       </div>
-      
     </div>    
     <div class="contenido2">
   </div>
 </div>
   
+<div class="d-lg-none d-block" style="background:#ffe604">
+  <div class="container">
+    <div class="col-12">
+      <div class="text-our-family">
+        <h1 class="text-center"><span> NUESTRA</span>FAMILIA</h1>
+        <p class="">Academia dedicada al desarrollo del fútbol, tanto formativo, recreativo y competitivo en diferentes segmentos de la sociedad. Ofrecemos exclusivamente el desarrollo y formación de habilidades motrices básicas, cualidades físicas especiales, fundamentos técnicos y tácticos, habilidades cognitivas y valores.</p>
+        <p class="text-justify">Basándonos en rescatar el tiempo libre de niños y niñas contamos con instalaciones adecuadas y seguras para la práctica del fútbol, ofrecemos la enseñanza especializada de profesionales en la materia.</p> 
+        <a href="" class="btn-futeca d-flex">
+          <div class="ml-2 mt-1">VER MÁS</div>
+          <div class="after"></div>
+          <span>></span>
+        </a>
+        </div>
+    </div>
+    <div class="col-12">
+      <div class="mt-4 pt-4" >
+        <h1 class="text-center pb-2 {{-- mr-4 --}}">ENTRENADORES</h1>
+        <div class="owl-carousel owl-theme staff" id="staff">
+          @foreach ($Staff as $item)
+              <div class="row">
+                <div class="{{-- name-staff --}} d-flex align-items-end col-12 col-sm-4 col-md-4 col-lg-4">
+                <h2>{{$item->nombre}}</h2>
+                </div>
+                <div class="{{-- image-staff --}}  d-flex align-items-end col-12 col-sm-4 col-md-4 col-lg-4">
+                <img src="{{Storage::url($item->fotoperfil)}}" alt="">
+                </div>
+                <div class="{{-- description-staff --}} text-white  d-flex align-items-end col-12 col-sm-4 col-md-4 col-lg-4">
+                <p class="pb-0 mb-0">{{$item->cargo}} <br> <br> {{$item->experiencia}}</p>
+                </div>
+              </div>
+          @endforeach
+      </div>
+      </div>
+    </div>
+</div>
+</div>
 </section>
 
 {{-- Seccion de patrocinadores --}}

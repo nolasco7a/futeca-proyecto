@@ -17,7 +17,7 @@
 <section class="" >
   <div class="container" style="position: relative">
 	<div class="row " style="padding-top:1.5rem">
-		<div class="col-sm-12 col-lg-7" style="right:40px">
+		<div class="col-sm-12 col-lg-7">
 			<h1 class="font-weight-bold pb-4 text-left">ENVÍANOS UN MENSAJE</h1>
 			<div class="form">
 					<div class="">
@@ -81,9 +81,9 @@
 					
 			</div>
 		</div>
-		<div class="col-sm-12 col-lg-5" style="right:35px" >
-			<h1 class="font-weight-bold pb-4 text-center">UBICACIÓN</h1>
-			<iframe class="mapsmediaquery" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3869.923845973783!2d-87.1688317851658!3d14.081672690134594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f6fbccb67b23e85%3A0x2e7b49bf81e14d58!2sFuteca!5e0!3m2!1ses-419!2shn!4v1572843784717!5m2!1ses-419!2shn" width="560px" height="530px" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+		<div class="col-12 col-lg-5" >
+			<h1 class="font-weight-bold text-center">UBICACIÓN</h1>
+			<iframe class="" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3869.923845973783!2d-87.1688317851658!3d14.081672690134594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f6fbccb67b23e85%3A0x2e7b49bf81e14d58!2sFuteca!5e0!3m2!1ses-419!2shn!4v1572843784717!5m2!1ses-419!2shn" width="100%" height="530px" frameborder="0" style="border:0" allowfullscreen=""></iframe>
 		</div>
 	</div>
 

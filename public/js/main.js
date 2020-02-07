@@ -71,7 +71,7 @@ $(document).ready(function(e) {
 
 });
 
-$('#staff').owlCarousel({
+$('.staff').owlCarousel({
     loop:true,
     margin:10,
     nav:true,
