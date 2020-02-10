@@ -78,6 +78,10 @@ a {
 } */
 .card .card-img-top {
   border-radius: 5px;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-position: center;
 }
 
 .card .card-title {
@@ -86,6 +90,10 @@ a {
   margin-top: 1rem;
   font-size: 1.5rem;
   letter-spacing: 2px;
+  width: 260px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .card .card-date {
