@@ -920,4 +920,22 @@ p {
 .elem {
   width: 100%;
 }
+
+@media (min-width: 576px) {
+  .elem {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .elem {
+    width: 48%;
+  }
+}
+
+@media (min-width: 992px) {
+  .elem {
+    width: 33%;
+  }
+}
 /*# sourceMappingURL=main.css.map */
