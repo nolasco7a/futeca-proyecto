@@ -85,7 +85,7 @@
             $urlgaleria = str_replace('\\', '/', $urlgaleria);
             @endphp 
         <div class="row">
-          <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+          <div class="col-lg-6 col-md-6 col-sm-12">
             <a class="elem" href="{{Storage::url($urlgaleria)}}" 
                     title="" 
                     data-lcl-txt="" 
