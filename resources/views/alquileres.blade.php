@@ -84,13 +84,17 @@
             $urlgaleria = $item->imagen;
             $urlgaleria = str_replace('\\', '/', $urlgaleria);
             @endphp 
-        <a class="elem" href="{{Storage::url($urlgaleria)}}" 
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+            <a class="elem" href="{{Storage::url($urlgaleria)}}" 
                     title="" 
                     data-lcl-txt="" 
                     data-lcl-author="" 
                     data-lcl-thumb="{{Storage::url($urlgaleria)}}">
                     <span style="background-image: url({{Storage::url($urlgaleria)}});"></span>
         </a>
+          </div>
+        </div>
             @endforeach
             <br/><br/>
         </div>
