@@ -45,7 +45,7 @@
     <div class="d-block d-lg-none">
         <div class="col-md-12 p-4" style="background: #ffe604">
             <div class="text-our-family">
-            <h1 class="text-center mt-4"><span>futeca</span> PALCO</h1>
+            <h1 class="text-center mt-4"><span style="color:#df5151;">futeca</span> PALCO</h1>
             <p class="text-justify">Contamos con cafetería con vista panorámica de las canchas. 
                 Puedes disfrutar de desayunos como baleadas, pan con frijoles, croissant, burritas; además de sándwiches de jamón y queso, sándwiches de pollo y pizzas.Puedes acompañarlo de un refresco, agua, jugo, bebida hidratante o energizante y café de tu elección. Después de jugar una buena potra puedes compartir de una cerveza bien helada.  
             </p>

@@ -14,7 +14,10 @@
 
 .tab-content{
 	padding-top: 5rem;
-}
+    @media (max-width: 767.98px) { 
+        font: -webkit-control;
+    }
+}   
 
 
 .nav-tabs .nav-link.active {

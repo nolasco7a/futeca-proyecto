@@ -20,25 +20,15 @@
     background-position: 5px -150px;
 }
     </style>
-
-
-<section>
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner" role="listbox">
-            <!-- Slide One - Set the background image for this slide in the line below -->
-            <div class="carousel-item active" style="background-image: url('./assets/images/torneos/torneosbanner.jpg')">
-            <div class="carousel-caption d-none d-md-block">
-                <h1 class="bg-danger text-white font-weight-bold">FUTECA TORNEOS</h1>
-                <a href="" class="btn-futeca d-flex">
-                    <div class="ml-2 mt-1">CONTÁCTANOS</div>
-                    <div class="after"></div>
-                    <span>></span>
-                  </a>
-            </div>
-            </div>
-        </div>
-    </div>
+<section class="banner">
+  <div class="principal-banner d-flex justify-content-center align-items-center">
+      <img src="./assets/images/torneos/torneosbanner.jpg" alt="">
+      <div class="overlay"></div>
+      <h1>Torneos Futeca</h1>
+  </div>
 </section>
+
+
 
 {{--<section style="overflow-x:hidden">
     <div class="row our-family d-flex align-items-center">
@@ -61,9 +51,9 @@
     </div>
   </section>--}}
 
-  <section style="margin-bottom: -72px;">
+  <section style="margin-bottom: -72px; ">
 
-    <div class="uno">
+    <div class="uno d-none d-lg-block">
       <div class="dos">
         <div class="row2 our-fanmily d-flex align-items-center">
           <div class="col-lg-6">
@@ -83,6 +73,23 @@
       </div>
       <div class="tres"></div>
     </div>
+  
+    <div class="containr-fluid d-block d-lg-none" style="background:#ffe604">
+      <div class="container">
+        <div class="text-our-family">
+          <h1><span style="color: #df5151;"> TORNEOS </span>EMPRESARIALES</h1>
+          <p class="">Academia dedicada al desarrollo del fútbol, tanto formativo, recreativo y competitivo en diferentes segmentos de la sociedad. Ofrecemos exclusivamente el desarrollo y formación de habilidades motrices básicas, cualidades físicas especiales, fundamentos técnicos y tácticos, habilidades cognitivas y valores.</p>
+          <p class="text-justify">
+            Futeca también es reconocido como el único en organizar, calendarizar y llevar el control estadístico de campeonatos. Nuestros torneos ofrecen: congresillo técnico, ceremonia de inauguración, calendario de juegos, árbitros, delegados, control de estadísticas, tabla de posiciones, medallas, trofeos y ceremonia de clausura. Nos adaptamos a tus necesidades y presupuesto.
+            <br>
+            <br>
+             Nuestra cartera de clientes esta conformado por: 
+            Banco Ficohsa, Inversiones La Paz, INTUR, UNICOMER, Super Liga Claro, Empresarial Femenino FUT5, Empresarial masculino FUT7, Corporación Flores, Sagrada Familia, entre otros. 
+        </p>    
+      </div>
+      </div>
+    </div>
+
     
   </section>
   
@@ -93,6 +100,8 @@
             <div class="col"></div>
         </div>
     </div>
+
+
 </section>
 
 

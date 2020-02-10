@@ -67,8 +67,8 @@ a {background-color:transparent !important;}
         color: $color4-futeca;
         margin-top: 1rem;
         font-size: 1.5rem;
-        letter-spacing: 2px;
-        width: 260px;
+        letter-spacing: 1px;
+        width: auto;
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
@@ -90,7 +90,7 @@ a {background-color:transparent !important;}
     }
 
     @media (max-width: 767.98px) { 
-        margin: 10px;
+        margin: 0px;
     }
 
 }
@@ -131,7 +131,10 @@ a {background-color:transparent !important;}
             width: 100%;
             top: 40%;
             @media (max-width: 767.98px) { 
-                font-size: 1.5rem;
+                font-size: 1.3rem;
+                text-align: center;
+                margin-left: 0px;
+                
                 
             }
         }

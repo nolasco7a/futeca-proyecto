@@ -74,7 +74,7 @@
       <div class="row2 our-fanmily d-flex align-items-center">
         <div class="col-lg-6">
         <div class="text-our-family">
-          <h1><span> NUESTRA</span>FAMILIA</h1>
+          <h1><span> NUESTRA </span>FAMILIA</h1>
           <p class="">Academia dedicada al desarrollo del fútbol, tanto formativo, recreativo y competitivo en diferentes segmentos de la sociedad. Ofrecemos exclusivamente el desarrollo y formación de habilidades motrices básicas, cualidades físicas especiales, fundamentos técnicos y tácticos, habilidades cognitivas y valores.</p>
           <p class="text-justify">Basándonos en rescatar el tiempo libre de niños y niñas contamos con instalaciones adecuadas y seguras para la práctica del fútbol, ofrecemos la enseñanza especializada de profesionales en la materia.</p> 
           <a href="" class="btn-futeca d-flex">
@@ -114,7 +114,7 @@
   <div class="container">
     <div class="col-12">
       <div class="text-our-family">
-        <h1 class="text-center"><span> NUESTRA</span>FAMILIA</h1>
+        <h1 class="text-center"><span style="color: #df5151;"> NUESTRA </span>FAMILIA</h1>
         <p class="">Academia dedicada al desarrollo del fútbol, tanto formativo, recreativo y competitivo en diferentes segmentos de la sociedad. Ofrecemos exclusivamente el desarrollo y formación de habilidades motrices básicas, cualidades físicas especiales, fundamentos técnicos y tácticos, habilidades cognitivas y valores.</p>
         <p class="text-justify">Basándonos en rescatar el tiempo libre de niños y niñas contamos con instalaciones adecuadas y seguras para la práctica del fútbol, ofrecemos la enseñanza especializada de profesionales en la materia.</p> 
         <a href="" class="btn-futeca d-flex">

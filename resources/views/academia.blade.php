@@ -19,7 +19,7 @@
       <div class="row2 our-fanmily d-flex align-items-center">
         <div class="col-lg-6">
         <div class="text-our-family">
-          <h1><span> ACADEMIA</span>FUTECA</h1>
+          <h1><span> ACADEMIA </span>FUTECA</h1>
           <p class="">Academia dedicada al desarrollo del fútbol, tanto formativo, recreativo y competitivo en diferentes segmentos de la sociedad. Ofrecemos exclusivamente el desarrollo y formación de habilidades motrices básicas, cualidades físicas especiales, fundamentos técnicos y tácticos, habilidades cognitivas y valores.</p>
         <p class="text-justify">Somos un centro especializado en la enseñanza del fútbol para niños y niñas en edades de 3 a 18 años. 
             Aquí aprenden las diferentes tácticas y estrategias de este deporte: Técnica, disciplina y el fundamento de trabajar en equipo. Participan en torneos locales, nacionales, regionales e internacionales. 
@@ -38,10 +38,10 @@
     <div class="tres"></div>
   </div>
 
-  <div class="containr-fluid d-block d-lg-none" style="background:#ffe604">
+  <div class="container-fluid d-block d-lg-none" style="background:#ffe604">
     <div class="container">
       <div class="text-our-family">
-        <h1><span> ACADEMIA</span>FUTECA</h1>
+        <h1><span style="color: #df5151;"> ACADEMIA </span>FUTECA</h1>
         <p class="">Academia dedicada al desarrollo del fútbol, tanto formativo, recreativo y competitivo en diferentes segmentos de la sociedad. Ofrecemos exclusivamente el desarrollo y formación de habilidades motrices básicas, cualidades físicas especiales, fundamentos técnicos y tácticos, habilidades cognitivas y valores.</p>
       <p class="text-justify">Somos un centro especializado en la enseñanza del fútbol para niños y niñas en edades de 3 a 18 años. 
           Aquí aprenden las diferentes tácticas y estrategias de este deporte: Técnica, disciplina y el fundamento de trabajar en equipo. Participan en torneos locales, nacionales, regionales e internacionales. 

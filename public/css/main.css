@@ -89,8 +89,8 @@ a {
   color: #3e3e3e !important;
   margin-top: 1rem;
   font-size: 1.5rem;
-  letter-spacing: 2px;
-  width: 260px;
+  letter-spacing: 1px;
+  width: auto;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -115,7 +115,7 @@ a {
 
 @media (max-width: 767.98px) {
   .card {
-    margin: 10px;
+    margin: 0px;
   }
 }
 
@@ -160,7 +160,9 @@ a {
 
 @media (max-width: 767.98px) {
   .banner .principal-banner h1 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    text-align: center;
+    margin-left: 0px;
   }
 }
 
@@ -620,6 +622,8 @@ a {
 .container {
   padding-top: 32px;
   padding-bottom: 32px;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 .banner-contactanos .principal-banner {
@@ -725,6 +729,12 @@ a {
 
 .tab-content {
   padding-top: 5rem;
+}
+
+@media (max-width: 767.98px) {
+  .tab-content {
+    font: -webkit-control;
+  }
 }
 
 .nav-tabs .nav-link.active {
@@ -897,5 +907,13 @@ p {
   right: 35px;
   left: 54%;
   margin: -29px;
+}
+
+p {
+  text-align: justify;
+}
+
+.content {
+  width: auto;
 }
 /*# sourceMappingURL=main.css.map */

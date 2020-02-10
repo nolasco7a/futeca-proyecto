@@ -7,6 +7,7 @@
       {!! request()->routeIs('palco') == true ? '<img src="/assets/images/logos/logo-palco.png" height="auto" width="100" class="pt-4">' :'' !!}
       {!! request()->routeIs('torneos') == true ? '<img src="/assets/images/logos/logo-torneos.png" height="auto" width="180" class="pt-4">' :'' !!}
       {!! request()->routeIs('contactanos') == true ? '<img src="/assets/images/logos/logo-trapiche.png" height="auto" width="180" class="pt-4">' :'' !!}
+      {!! request()->routeIs('blog') == true ? '<img src="/assets/images/logos/logo-trapiche.png" height="auto" width="180" class="pt-4">' :'' !!}
       <style>
   .navbar-light .navbar-toggler {
       color: transparent;
