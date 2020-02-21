@@ -4,7 +4,7 @@
 
 <section class="banner-contactanos">
     <div class="principal-banner d-flex justify-content-center align-items-center">
-        <img src="./assets/images/alquileres/FUT5.jpeg" alt="">
+        <img src="./assets/images/Contactanos/bannercont.jpg" alt="">
         <div class="overlay"></div>
         <h1>CONTÁCTANOS</h1>
     </div>

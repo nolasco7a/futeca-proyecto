@@ -34,6 +34,9 @@
         </span>
       </div>
       <div class="col-sm-12">
+        <p class="text-center" style="color: grey">Teléfonos: 2283-0025/2202-0099</p>
+      </div>
+      <div class="col-sm-12">
       <p class="text-center" style="color: grey">Futeca 2020, Todos los derechos reservados ®.</p>
       </div>
     </div>

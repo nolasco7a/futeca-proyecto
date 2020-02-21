@@ -5,7 +5,7 @@
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner" role="listbox">
                 <!-- Slide One - Set the background image for this slide in the line below -->
-                <div class="carousel-item active" style="background-image: url('./assets/images/palco/palco12.jpg')">
+                <div class="carousel-item active" style="background-image: url('./assets/images/palco/palco1.jpg')">
                 <div class="carousel-caption d-none d-md-block">
                     <h1 class="bg-danger text-white font-weight-bold">FUTECA PALCO</h1>
                     <a href="" class="btn-futeca d-flex">
@@ -34,7 +34,7 @@
               </p>
               </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6" style="padding-left: 75px;">
               <div class="text-our-family" >
                   <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FFutecaHonduras%2Fphotos%2Fa.594761567246709%2F2385848818137966%2F%3Ftype%3D3&width=640&show_text=false&height=450&appId" width="100%" height="450px" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
               </div>

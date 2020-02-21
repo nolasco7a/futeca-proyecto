@@ -19,7 +19,11 @@
             <div class="card p-3 card-shadow">
             <img src="{{Storage::url($noticia->imagen)}}" class="card-img-top" alt="...">
               <div class="card-body p-0">
-              <h2 class="card-date">{{$noticia->created_at}}</h2>
+                @php
+                    $fecha=date_format($noticia->created_at, 'd-m-y');
+/*                     $date=date_format($fecha, ); */
+                @endphp
+              <h2 class="card-date">{{$fecha}}</h2>
               <h5 class="card-title p-1 text-center text-bold">{{$noticia->titulo}}</h5>
                 <div class="separator-title"></div>
                 @php

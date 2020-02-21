@@ -4,7 +4,7 @@
     <div class="principal-banner d-flex justify-content-center align-items-center">
         <img src="./assets/images/alquileres/canchabanner.jpeg" alt="">
         <div class="overlay"></div>
-        <h1>Reserva tu cancha</h1>
+        <h1>Futeca Alquileres</h1>
     </div>
 </section>
 {{-- <section>
@@ -26,73 +26,159 @@
 </section> --}}
 <section>
     <div class="container" style="padding-top:30px">
-        <h1 class="font-weight-bold py-3 text-center">Canchas</h1> 
+        <h1 class="font-weight-bold py-3 text-center">Canchas</h1>
         <div class="card mb-3">
             <div class="row no-gutters">
-              <div class="col-md-4">
-                <img src="./assets/images/alquileres/FUT7.jpg" class="card-img" style="padding: 1rem; border-radius: 20px" alt="...">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">FUT7 - 2 Canchas</h5>
-                  <p class="card-text">Siendo los pioneros en introducir el campo FUT7, permitiendo jugar con     8 ó 9 jugadores por equipo. 
-                    La mismas están equipadas con grama sintética de la más alta tecnología de punta. 
-                    Asimismo, cuentan con la iluminación adecuada para que pueda desarrollar el mejor fútbol que hay en ti. 
-                    Las canchas FUT7 tienen una medida de 33 x 52 metros cada una.</p>
+                <div class="col-md-4">
+                    <img src="./assets/images/alquileres/FUT7.jpg" class="card-img"
+                        style="padding: 1rem; border-radius: 20px" alt="...">
                 </div>
-              </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h1 class="card-title font-weight-bold"><span style="color: #df5151;">FUT7 - 2</span> Canchas
+                        </h1>
+                        <p class="card-text">Siendo los pioneros en introducir el campo FUT7, permitiendo jugar con 8 ó
+                            9 jugadores por equipo.
+                            Las mismas están equipadas con grama sintética de la más alta tecnología de punta y con la iluminación adecuada para puedas desarrollar el mejor futbol que hay en ti.
+                             Las canchas FUT7 tienen una medida de 33 x 52 metros cada una.</p>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="card mb-3">
+        </div>
+        <div class="card mb-3">
             <div class="row no-gutters">
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">FUT7 - 2 Canchas</h5>
-                  <p class="card-text">La mismas están equipadas con grama sintética de la más alta tecnología de punta. 
-                    Asimismo, cuentan con la iluminación adecuada para que pueda desarrollar el mejor fútbol que hay en ti. 
-                    Las canchas FUT5 tienen una medida de 21 x 40 metros cada una.</p>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h1 class="card-title font-weight-bold"><span style="color: #df5151;">FUT7 - 2</span> Canchas
+                        </h1>
+                        <p class="card-text"> Arrendamos por hora las canchas a personas naturales, empresas, colegios, universidades o equipos que deseen organizar 
+                          juegos o entrenamientos. Abiertos de lunes a domingo de 8:00am – 10:00pm. También abrimos días feriados. 
+                          </p>
+                    </div>
                 </div>
-              </div>
-              <div class="col-md-4">
-                <img src="./assets/images/alquileres/FUT5.jpeg" class="card-img" style="padding: 1rem; border-radius: 20px" alt="...">
-              </div>
+                <div class="col-md-4">
+                    <img src="./assets/images/alquileres/FUT5.jpeg" class="card-img"
+                        style="padding: 1rem; border-radius: 20px" alt="...">
+                </div>
             </div>
-          </div>
-          <div class="card mb-3">
+        </div>
+        <div class="card mb-3">
             <div class="row no-gutters">
-              <div class="col-md-4">
-                <img src="./assets/images/alquileres/FUT5.jpeg" class="card-img" style="padding: 1rem; border-radius: 20px" alt="...">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">FUT5 - 3 Canchas</h5>
-                  <p class="card-text">La mismas están equipadas con grama sintética de la más alta tecnología de punta. 
-                    Asimismo, cuentan con la iluminación adecuada para que pueda desarrollar el mejor fútbol que hay en ti. 
-                    Las canchas FUT5 tienen una medida de 21 x 40 metros cada una.</p>
+                <div class="col-md-4">
+                    <img src="./assets/images/alquileres/FUT5.jpeg" class="card-img"
+                        style="padding: 1rem; border-radius: 20px" alt="...">
                 </div>
-              </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h1 class="card-title font-weight-bold"><span style="color: #df5151;">FUT5 - 3</span> Canchas
+                        </h1>
+                        <p class="card-text">Las canchas FUT5 tienen una medida de 21 x 40 metros cada una.
+                          Las mismas están equipadas con grama sintética de la más alta tecnología de
+                            punta y cuentan con la iluminación adecuada para que pueda desarrollar el mejor fútbol que
+                            hay en ti.
+                            </p>
+                    </div>
+                </div>
             </div>
-          </div>
+        </div>
     </div>
 </section>
 <section>
-    <div class="container bg-light ">  
-        <h1 class="font-weight-bold pt-5 pb-4 text-center">Galería de las canchas disponibles</h1>              
+    <div class="container py-5">
+        <h1 class="font-weight-bold pb-4 text-center">Horario Alquiler de Canchas </h1>
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
+                aria-controls="nav-home" aria-selected="true">Días Promoción</a>
+
+            <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
+                aria-controls="nav-profile" aria-selected="false">Semana</a>
+            {{--<a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</a>--}}
+        </div>
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                <div class="table-responsive  table-condensed">
+
+                    <table class="table table-sm table-bordered">
+                        <thead class="text-white bg-danger">
+                            <tr class="text-center">
+                                <th scope="col">Canchas</th>
+                                <th scope="col">Precio</th>
+                                <th scope="col">Días</th>
+                                <th scope="col">Hora Inicio</th>
+                                <th scope="col">Hora Fin</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach($horariopromocion as $item)
+                            <tr class="text-center">
+                                <td>{{$item->cancha}}</td>
+                                <td>L.{{$item->precio}}</td>
+                                <td>{{$item->dias}}</td>
+                                @php
+                                    $tiempo=date("g:i a",strtotime($item->horainicio));
+                                @endphp
+                                <td>{{$tiempo}}</td>
+                                @php
+                                    $tiempo=date("g:i a",strtotime($item->horafin));
+                                @endphp
+                                <td>{{$tiempo}}</td>
+                            </tr>
+                            @endforeach
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                <table class="table table-sm table-bordered">
+                    <thead class="text-white bg-danger">
+                        <tr class="text-center">
+                            <th scope="col">Cancha</th>
+                            <th scope="col">Precio</th>
+                            <th scope="col">Días</th>
+                            <th scope="col">Hora Inicio</th>
+                            <th scope="col">Hora Fin</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach($horariosemana as $item)
+                        <tr class="text-center">
+                            <td>{{$item->cancha}}</td>
+                            <td>L.{{$item->precio}}</td>
+                            <td>{{$item->dias}}</td>
+                            @php
+                                    $tiempo=date("g:i a",strtotime($item->horainicio));
+                                @endphp
+                            <td>{{$tiempo}}</td>
+                            @php
+                                    $tiempo=date("g:i a",strtotime($item->horafin));
+                                @endphp
+                            <td>{{$tiempo}}</td>
+                        </tr>
+                        @endforeach
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container bg-light ">
+        <h1 class="font-weight-bold pt-5 pb-4 text-center">Galería de las canchas disponibles</h1>
         <div class="content">
             @foreach($Galeriacanchas as $item)
             @php
             $urlgaleria = $item->imagen;
             $urlgaleria = str_replace('\\', '/', $urlgaleria);
-            @endphp 
-        <a class="elem" href="{{Storage::url($urlgaleria)}}" 
-                    title="" 
-                    data-lcl-txt="" 
-                    data-lcl-author="" 
-                    data-lcl-thumb="{{Storage::url($urlgaleria)}}">
-                    <span style="background-image: url({{Storage::url($urlgaleria)}});"></span>
-        </a>
+            @endphp
+            <a class="elem" href="{{Storage::url($urlgaleria)}}" title="" data-lcl-txt="" data-lcl-author=""
+                data-lcl-thumb="{{Storage::url($urlgaleria)}}">
+                <span style="background-image: url({{Storage::url($urlgaleria)}});"></span>
+            </a>
             @endforeach
-            <br/><br/>
+            <br /><br />
         </div>
     </div>
 </section>

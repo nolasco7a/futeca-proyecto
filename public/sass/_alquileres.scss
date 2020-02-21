@@ -37,3 +37,16 @@
 	width: 1226px;
 }
 
+@media (max-width: 767.98px){
+	.banner .principal-banner h1 {
+		font-size: 1.3rem;
+		text-align: center;
+		margin-left: 0px;
+		letter-spacing: 24px;
+	}
+
+	.py-5 {
+		padding-top: 0rem !important;
+	}
+	
+}

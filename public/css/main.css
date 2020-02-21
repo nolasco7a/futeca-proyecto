@@ -85,7 +85,7 @@ a {
 }
 
 .card .card-title {
-  font-family: 'futura book';
+  font-family: 'futura heavy';
   color: #3e3e3e !important;
   margin-top: 1rem;
   font-size: 1.5rem;
@@ -611,7 +611,7 @@ a {
 .contenido2 {
   width: 100%;
   height: 100%;
-  background-color: #464545;
+  background-color: #000000cf;
   z-index: 0;
 }
 
@@ -765,8 +765,8 @@ a {
   width: 100%;
   height: 100%;
   background-color: #e9cf08;
-  -webkit-transform: skewX(-16deg) translateX(-40%);
-          transform: skewX(-16deg) translateX(-40%);
+  -webkit-transform: skewX(-16deg) translateX(-50%);
+          transform: skewX(-16deg) translateX(-50%);
   position: absolute;
   z-index: 10;
 }
@@ -785,8 +785,8 @@ a {
 }
 
 .row2 {
-  margin-top: 4%;
-  margin-left: 43%;
+  margin-top: 3%;
+  margin-left: 50%;
   width: 95%;
   text-align: justify;
   -webkit-transform: skew(16deg);
@@ -815,7 +815,6 @@ a {
   height: 100%;
   background-color: black;
   z-index: 0;
-  background-image: url("../assets/images/cancha2.jpg");
   background-size: 673px;
 }
 
@@ -829,6 +828,16 @@ p {
   font-family: 'futura book';
   margin-top: 1rem;
   color: black;
+}
+
+.name-staff h2 {
+  color: white;
+  text-align: right;
+}
+
+.description-staff p {
+  font-size: .70rem !important;
+  color: #e9cf08;
 }
 
 .elem, .elem * {
@@ -872,6 +881,18 @@ p {
 
 .content {
   width: 1226px;
+}
+
+@media (max-width: 767.98px) {
+  .banner .principal-banner h1 {
+    font-size: 1.3rem;
+    text-align: center;
+    margin-left: 0px;
+    letter-spacing: 24px;
+  }
+  .py-5 {
+    padding-top: 0rem !important;
+  }
 }
 
 .iframe-container {

@@ -7,10 +7,13 @@
   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
       </ol>
       <div class="carousel-inner" role="listbox">
         <!-- Slide One - Set the background image for this slide in the line below -->
-        <div class="carousel-item active" style="background-image: url('./assets/images/index/banner1.jpg')">
+        <div class="carousel-item active" style="background-image: url('./assets/images/index/cancha.jpg')">
           <div class="carousel-caption d-none d-md-block">
             <h1 class="bg-danger text-white font-weight-bold">RESERVA TU CANCHA</h1>
             <a href="" class="btn-futeca d-flex">
@@ -20,6 +23,41 @@
             </a>
           </div>
         </div>
+
+        <div class="carousel-item" style="background-image: url('./assets/images/index/banner2.jpg')">
+          <div class="carousel-caption d-none d-md-block">
+          <h1 class="bg-danger text-white font-weight-bold">RESERVA TU CANCHA</h1>
+            <a href="" class="btn-futeca d-flex">
+              <div class="ml-2 mt-1">CONTÁCTANOS</div>
+              <div class="after"></div>
+              <span>></span>
+            </a>
+          </div>
+        </div>
+
+        <div class="carousel-item" style="background-image: url('./assets/images/index/banner3.jpg')">
+          <div class="carousel-caption d-none d-md-block">
+            <h1 class="bg-danger text-white font-weight-bold">RESERVA TU CANCHA</h1>
+            <a href="" class="btn-futeca d-flex">
+              <div class="ml-2 mt-1">CONTÁCTANOS</div>
+              <div class="after"></div>
+              <span>></span>
+            </a>
+          </div>
+        </div>
+
+        <div class="carousel-item" style="background-image: url('./assets/images/index/banner4.jpg')">
+          <div class="carousel-caption d-none d-md-block">
+            <h1 class="bg-danger text-white font-weight-bold">RESERVA TU CANCHA</h1>
+            <a href="" class="btn-futeca d-flex">
+              <div class="ml-2 mt-1">CONTÁCTANOS</div>
+              <div class="after"></div>
+              <span>></span>
+            </a>
+          </div>
+        </div>
+
+        
       </div>
       <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -74,8 +112,8 @@
       <div class="row2 our-fanmily d-flex align-items-center">
         <div class="col-lg-6">
         <div class="text-our-family">
-          <h1><span> NUESTRA </span>FAMILIA</h1>
-          <p class="">Academia dedicada al desarrollo del fútbol, tanto formativo, recreativo y competitivo en diferentes segmentos de la sociedad. Ofrecemos exclusivamente el desarrollo y formación de habilidades motrices básicas, cualidades físicas especiales, fundamentos técnicos y tácticos, habilidades cognitivas y valores.</p>
+          <h1><span>FUTECA</span>HONDURAS</h1>
+          <p class="">Futeca, franquicia centro americana que nace en Guatemala en el año 1998 como una pequeña academia. Orgullosamente podemos decir hoy que Futeca es la organización deportiva privada más grande de Centroamérica. En Honduras, nace como entidad deportiva en el año 2011, interesado en el desarrollo de nuestros niños y del fútbol.</p>
           <p class="text-justify">Basándonos en rescatar el tiempo libre de niños y niñas contamos con instalaciones adecuadas y seguras para la práctica del fútbol, ofrecemos la enseñanza especializada de profesionales en la materia.</p> 
           <a href="" class="btn-futeca d-flex">
             <div class="ml-2 mt-1">VER MÁS</div>
@@ -84,23 +122,26 @@
           </a>
           </div>
       </div>
+
       <div class="col-lg-6" style="margin-left: 89px;">
         <div class="text-our-family" >
-          <h3 class="text-center text-white pb-2 {{-- mr-4 --}}">ENTRENADORES</h3>
+          <!--<h3 class="text-center text-white pb-2 {{-- mr-4 --}}">ENTRENADORES</h3>--->
           <div class="owl-carousel owl-theme staff" id="">
-            @foreach ($Staff as $item)
-                <div class="row">
-                  <div class="name-staff d-flex align-items-end col-12 col-sm-4 col-md-4 col-lg-4">
-                  <h2>{{$item->nombre}}</h2>
-                  </div>
-                  <div class="image-staff  d-flex align-items-end col-12 col-sm-4 col-md-4 col-lg-4">
-                  <img src="{{Storage::url($item->fotoperfil)}}" alt="">
-                  </div>
-                  <div class="description-staff text-white  d-flex align-items-end col-12 col-sm-4 col-md-4 col-lg-4">
-                  <p class="pb-0 mb-0">{{$item->cargo}} <br> <br> {{$item->experiencia}}</p>
-                  </div>
-                </div>
-            @endforeach
+             <div class="mision">
+              <h1 class="text-center text-white pb-2">MISIÓN</h1>
+              <p class="text-justify text-white">
+                Somos una empresa hondureña visionaria y con altos valores empresariales, dedicada al desarrollo y práctica del futbol,
+                 que trabaja por brindar auténticas experiencias deportivas, al ofrecer las mejores instalaciones deportivas y excelente 
+                 organización para hombres y mujeres en todas las edades que viven la pasión del futbol. 
+              </p>
+             </div>
+             <div class="vision">
+              <h1 class="text-center text-white pb-2">VISIÓN</h1>
+              <p class="text-justify text-white" >
+                Ser la empresa dedicada al desarrollo del futbol y con la mayor cobertura, contribuyendo a la construcción de una sociedad 
+                más sana y la formación de nuevas generaciones por medio del deporte.
+              </p>
+             </div>
         </div>
         </div>
       </div>
@@ -126,27 +167,35 @@
     </div>
     <div class="col-12">
       <div class="mt-4 pt-4" >
-        <h1 class="text-center pb-2 {{-- mr-4 --}}">ENTRENADORES</h1>
-        <div class="owl-carousel owl-theme staff" id="staff">
-          @foreach ($Staff as $item)
-              <div class="row">
-                <div class="{{-- name-staff --}} d-flex align-items-end col-12 col-sm-4 col-md-4 col-lg-4">
-                <h2>{{$item->nombre}}</h2>
-                </div>
-                <div class="{{-- image-staff --}}  d-flex align-items-end col-12 col-sm-4 col-md-4 col-lg-4">
-                <img src="{{Storage::url($item->fotoperfil)}}" alt="">
-                </div>
-                <div class="{{-- description-staff --}} text-white  d-flex align-items-end col-12 col-sm-4 col-md-4 col-lg-4">
-                <p class="pb-0 mb-0">{{$item->cargo}} <br> <br> {{$item->experiencia}}</p>
-                </div>
-              </div>
-          @endforeach
-      </div>
+        <div class="owl-carousel owl-theme staff" id="">
+          <div class="mision">
+           <h1 class="text-center text-black pb-2">MISIÓN</h1>
+           <p class="text-justify text-black">
+             Somos una empresa hondureña visionaria y con altos valores empresariales, dedicada al desarrollo y práctica del futbol,
+              que trabaja por brindar auténticas experiencias deportivas, al ofrecer las mejores instalaciones deportivas y excelente 
+              organización para hombres y mujeres en todas las edades que viven la pasión del futbol. 
+           </p>
+          </div>
+          <div class="vision">
+           <h1 class="text-center text-black pb-2">VISIÓN</h1>
+           <p class="text-justify text-black" >
+             Ser la empresa dedicada al desarrollo del futbol y con la mayor cobertura, contribuyendo a la construcción de una sociedad 
+             más sana y la formación de nuevas generaciones por medio del deporte.
+           </p>
+          </div>
+     </div>
+        
       </div>
     </div>
 </div>
 </div>
 </section>
+{{-- Sección Torneos Corporaativos--}}
+<section >
+  <div class="container ">
+    <h1 class="pt-5 text-center" ><span class="h1-span">Torneos</span> Corporativos</h1>
+  </div>
+
 
 {{-- Seccion de patrocinadores --}}
 <section >
@@ -172,7 +221,10 @@
             <div class="card p-3 card-shadow">
             <img src="{{Storage::url($noticia->imagen)}}" class="card-img-top" alt="...">
               <div class="card-body p-0">
-              <h2 class="card-date">{{$noticia->created_at}}</h2>
+                @php
+                    $fecha=date_format($noticia->created_at, 'd-m-y');
+                @endphp
+              <h2 class="card-date">{{$fecha}}</h2>
               <h5 class="card-title p-1 text-center text-bold">{{$noticia->titulo}}</h5>
                 <div class="separator-title"></div>
                 @php

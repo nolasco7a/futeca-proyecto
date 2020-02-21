@@ -24,7 +24,7 @@
   <div class="principal-banner d-flex justify-content-center align-items-center">
       <img src="./assets/images/torneos/torneosbanner.jpg" alt="">
       <div class="overlay"></div>
-      <h1>Torneos Futeca</h1>
+      <h1>Futeca Torneos</h1>
   </div>
 </section>
 
