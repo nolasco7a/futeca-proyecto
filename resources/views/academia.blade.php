@@ -20,11 +20,7 @@
             <div class="row2 our-fanmily d-flex align-items-center">
                 <div class="col-lg-6">
                     <div class="text-our-family">
-<<<<<<< HEAD
                         <h1><span> NUESTRA </span>FAMILIA</h1>
-=======
-                        <h1><span> ACADEMIA </span>FUTECA</h1>
->>>>>>> origin
                         <p class="">Academia dedicada al desarrollo del fútbol, tanto formativo, recreativo y
                             competitivo en diferentes segmentos de la sociedad. Ofrecemos exclusivamente el desarrollo y
                             formación de habilidades motrices básicas, cualidades físicas especiales, fundamentos
@@ -46,7 +42,6 @@
                         </a>
                     </div>
                 </div>
-<<<<<<< HEAD
                 <div class="col-lg-6" style="margin-left: 30px;">
                     <div class="text-our-family" >
                       <h3 class="text-center text-white pb-2 {{-- mr-4 --}}">ENTRENADORES</h3>
@@ -122,39 +117,6 @@
         </div>
     </div>
 
-=======
-            </div>
-        </div>
-        <div class="tres"></div>
-    </div>
-
-    <div class="container-fluid d-block d-lg-none" style="background:#ffe604">
-        <div class="container">
-            <div class="text-our-family">
-                <h1><span style="color: #df5151;"> ACADEMIA </span>FUTECA</h1>
-                <p class="">Academia dedicada al desarrollo del fútbol, tanto formativo, recreativo y competitivo en
-                    diferentes segmentos de la sociedad. Ofrecemos exclusivamente el desarrollo y formación de
-                    habilidades motrices básicas, cualidades físicas especiales, fundamentos técnicos y tácticos,
-                    habilidades cognitivas y valores.</p>
-                <p class="text-justify">Somos un centro especializado en la enseñanza del fútbol para niños y niñas en
-                    edades de 3 a 18 años.
-                    Aquí aprenden las diferentes tácticas y estrategias de este deporte: Técnica, disciplina y el
-                    fundamento de trabajar en equipo. Participan en torneos locales, nacionales, regionales e
-                    internacionales.
-                    Asimismo, se realizan viajes al interior del país para jugar partidos amistosos y al mismo tiempo
-                    conocer Honduras. Los alumnos son clasificados de acuerdo con su año de nacimiento en categorías,
-                    desde la U-4 hasta la U-18. Contamos con horario semanal y horario sabatino.
-                </p>
-                <a href="{{route('contactanos')}}" class="btn-futeca d-flex">
-                    <div class="ml-2 mt-1">INSCRÍBETE</div>
-                    <div class="after"></div>
-                    <span>></span>
-                </a>
-            </div>
-        </div>
-    </div>
-
->>>>>>> origin
 </section>
 
 
@@ -196,10 +158,6 @@
                 aria-controls="nav-profile" aria-selected="false">Sábados</a>
             {{--<a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</a>--}}
         </div>
-<<<<<<< HEAD
-=======
-        </nav>
->>>>>>> origin
         <div class="tab-content" id="nav-tabContent">
             <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
                 <div class="table-responsive  table-condensed">
@@ -220,7 +178,6 @@
                                 <td>{{$item->categoria}}</td>
                                 <td>L.{{$item->precio}}</td>
                                 <td>{{$item->dias}}</td>
-<<<<<<< HEAD
                                 @php
                                     $tiempo=date("g:i a",strtotime($item->horainicio));
                                 @endphp
@@ -229,10 +186,6 @@
                                     $tiempo=date("g:i a",strtotime($item->horafin));
                                 @endphp
                                 <td>{{$tiempo}}</td>
-=======
-                                <td>{{$item->horainicio}}</td>
-                                <td>{{$item->horafin}}</td>
->>>>>>> origin
                             </tr>
                             @endforeach
                         </tbody>
@@ -254,7 +207,6 @@
                         <tr class="text-center">
                             <td>{{$item->categoria}}</td>
                             <td>L.{{$item->precio}}</td>
-<<<<<<< HEAD
                             @php
                                     $tiempo=date("g:i a",strtotime($item->horainicio));
                                 @endphp
@@ -263,10 +215,6 @@
                                     $tiempo=date("g:i a",strtotime($item->horafin));
                                 @endphp
                             <td>{{$tiempo}}</td>
-=======
-                            <td>{{$item->horainicio}}</td>
-                            <td>{{$item->horafin}}</td>
->>>>>>> origin
                         </tr>
                         @endforeach
                     </tbody>
@@ -275,10 +223,6 @@
         </div>
         <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
     </div>
-<<<<<<< HEAD
-=======
-    </div>
->>>>>>> origin
 </section>
 
 
@@ -305,11 +249,6 @@
         </div>
     </div>--}}
     <section>
-<<<<<<< HEAD
-        <h1 class="text-center"><span>POLÍTICAS</span></h1> <br>
-
-        <div class="row m-0">
-=======
         <h1 class="text-center"><span style="color: #df5151;"> GALERÍA </span>ACADEMIA</h1>
         <div class="container ">
             <div class="content">
@@ -345,7 +284,6 @@
 
         <div class="container">
           <div class="row m-0">
->>>>>>> origin
             <div class="card col-lg-3 col-md-3 col-12 text-white bg-info mb-3">
                 <div class="card-body">
                     <p class="card-text">Para ser parte de nuestra academia el alumno debe estar inscrito y tener
@@ -367,63 +305,36 @@
             </div>
             <div class="card col-lg-3 col-md-3 col-12 bg-light mb-3">
                 <div class="card-body">
-<<<<<<< HEAD
-=======
-                    <p class="card-text">En caso de no haber cancelado en los primeros 10 días del mes se cobrará L.
-                        25.00 extra sobre las mensualidades.</p>
-                </div>
-            </div>
-
-            <div class="card col-lg-3 col-md-3 col-12 text-white bg-info mb-3">
-                <div class="card-body">
->>>>>>> origin
                     <p class="card-text">El no notificar la ausencia de los entrenos ya sea por estudios, viajes y
                         lesiones o estado de salud, está sujeto al pago de la mensualidad correspondiente. (Si notifica
                         la ausencia, su mensualidad se congelará hasta su regreso).</p>
                 </div>
             </div>
-<<<<<<< HEAD
 
             <div class="card col-lg-3 col-md-3 col-12 text-white bg-info mb-3">
-=======
-            <div class="card col-lg-3 col-md-3 col-12 bg-light mb-3">
->>>>>>> origin
                 <div class="card-body">
                     <p class="card-text">La inasistencia consecutiva a 3 meses causará la baja de inscripción. Y al
                         momento de regresar deberá pagar la inscripción.</p>
                 </div>
             </div>
-<<<<<<< HEAD
             <div class="card col-lg-3 col-md-3 col-12 bg-light mb-3">
-=======
-            <div class="card col-lg-3 col-md-3 col-12 text-white bg-info mb-3">
->>>>>>> origin
                 <div class="card-body">
                     <p class="card-text">Los alumnos para poder recibir sus entrenamientos deben portar su uniforme
                         correspondiente. (Camisa, calzoneta, chimpas, medias y tenis tacos).</p>
                 </div>
             </div>
-<<<<<<< HEAD
             <div class="card col-lg-3 col-md-3 col-12 text-white bg-info mb-3">
-=======
-            <div class="card col-lg-3 col-md-3 col-12 bg-light mb-3">
->>>>>>> origin
                 <div class="card-body">
                     <p class="card-text">Para los torneos los alumnos tienen que ser constantes en sus entrenamientos
                         (No es solo venir a los torneos).</p>
                 </div>
             </div>
-<<<<<<< HEAD
             <div class="card col-lg-3 col-md-3 col-12 bg-light mb-3">
-=======
-            <div class="card col-lg-3 col-md-3 col-12 text-white bg-info mb-3">
->>>>>>> origin
                 <div class="card-body">
                     <p class="card-text">Para poder participar en los torneos es obligatorio tener disponible los 2
                         uniformes de competencia, el pago de la inscripción al torneo y la mensualidad al día.</p>
                 </div>
             </div>
-<<<<<<< HEAD
             
 
         </div>
@@ -432,11 +343,6 @@
 
 
 
-=======
-
-        </div>
-        </div>
->>>>>>> origin
     </section>
 
 
