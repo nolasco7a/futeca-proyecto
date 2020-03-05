@@ -1,18 +1,32 @@
 @extends('layouts.template')
 @section('content')
+<script src="js/lc_lightbox.lite.js" type="text/javascript"></script>
+<script src="lib/AlloyFinger/alloy_finger.min.js" type="text/javascript"></script>
 
+<script>
+    @foreach ($categorias as $item)
+        $(document).ready(function() {
+        lc_lightbox('#{{$item->categoria}} a',{
+            thumb_attr: 'data-lcl-thumb', 
+            
+            skin: 'minimal',
+            radius: 0,
+            padding	: 0,
+            border_w: 0,
+
+        });
+    });
+    @endforeach
+</script>
 
 <section class="banner">
     <div class="principal-banner d-flex justify-content-center align-items-center">
         <img src="./assets/images/academia/academia1.jpg" style="height: 789px;">
         <div class="overlay"></div>
-        <h1>futeca academia</h1>            
-        </div>
+        <h1>futeca academia</h1>
+    </div>
     </div>
 </section>
-
-
-
 <section>
 
     <div class="uno d-none d-lg-block">
@@ -20,11 +34,7 @@
             <div class="row2 our-fanmily d-flex align-items-center">
                 <div class="col-lg-6">
                     <div class="text-our-family">
-<<<<<<< HEAD
-                        <h1><span> NUESTRA </span>FAMILIA</h1>
-=======
                         <h1><span> ACADEMIA </span>FUTECA</h1>
->>>>>>> origin
                         <p class="">Academia dedicada al desarrollo del fútbol, tanto formativo, recreativo y
                             competitivo en diferentes segmentos de la sociedad. Ofrecemos exclusivamente el desarrollo y
                             formación de habilidades motrices básicas, cualidades físicas especiales, fundamentos
@@ -37,7 +47,7 @@
                             Asimismo, se realizan viajes al interior del país para jugar partidos amistosos y al mismo
                             tiempo conocer Honduras. Los alumnos son clasificados de acuerdo con su año de nacimiento en
                             categorías,
-                            desde la U-4 hasta la U-18. Contamos con horario semanal y horario sabatino.
+                            desde la U-3 hasta la U-17. Contamos con horario semanal y horario sabatino.
                         </p>
                         <a href="{{route('contactanos')}}" class="btn-futeca d-flex">
                             <div class="ml-2 mt-1">INSCRÍBETE</div>
@@ -46,34 +56,34 @@
                         </a>
                     </div>
                 </div>
-<<<<<<< HEAD
                 <div class="col-lg-6" style="margin-left: 30px;">
-                    <div class="text-our-family" >
-                      <h3 class="text-center text-white pb-2 {{-- mr-4 --}}">ENTRENADORES</h3>
-                      <div class="owl-carousel owl-theme staff" id="" >
-                          {{-- @php
+                    <div class="text-our-family">
+                        <h3 class="text-center text-white pb-2 {{-- mr-4 --}}">ENTRENADORES</h3>
+                        <div class="owl-carousel owl-theme staff" id="">
+                            {{-- @php
                               dd($Staff);
                           @endphp --}}
-                          @foreach ($Staff as $item)
-                          <div class="row">
-                            <div class="name-staff d-flex align-items-end col-12 col-sm-4 col-md-4 col-lg-4">
-                            <h2>{{$item->nombre}}</h2>
+                            @foreach ($Staff as $item)
+                            <div class="row">
+                                <div class="name-staff d-flex align-items-end col-12 col-sm-4 col-md-4 col-lg-4">
+                                    <h2>{{$item->nombre}}</h2>
+                                </div>
+                                <div class="image-staff  d-flex align-items-end col-12 col-sm-4 col-md-4 col-lg-4">
+                                    <img src="{{Storage::url($item->fotoperfil)}}" alt="">
+                                </div>
+                                <div
+                                    class="description-staff text-white  d-flex align-items-end col-12 col-sm-4 col-md-4 col-lg-4">
+                                    <p class="pb-0 mb-0">{{$item->cargo}} <br> <br> {{$item->experiencia}}</p>
+                                </div>
                             </div>
-                            <div class="image-staff  d-flex align-items-end col-12 col-sm-4 col-md-4 col-lg-4">
-                            <img src="{{Storage::url($item->fotoperfil)}}" alt="">
-                            </div>
-                            <div class="description-staff text-white  d-flex align-items-end col-12 col-sm-4 col-md-4 col-lg-4">
-                            <p class="pb-0 mb-0">{{$item->cargo}} <br> <br> {{$item->experiencia}}</p>
-                            </div>
-                          </div>
-                      @endforeach
+                            @endforeach
+                        </div>
                     </div>
-                    </div>
-                  </div>
+                </div>
+            </div>
         </div>
-        </div>
-  <div class="tres"></div>
-</div>
+        <div class="tres"></div>
+    </div>
 
 
     <div class="container-fluid d-block d-lg-none" style="background:#ffe604">
@@ -91,7 +101,7 @@
                     internacionales.
                     Asimismo, se realizan viajes al interior del país para jugar partidos amistosos y al mismo tiempo
                     conocer Honduras. Los alumnos son clasificados de acuerdo con su año de nacimiento en categorías,
-                    desde la U-4 hasta la U-18. Contamos con horario semanal y horario sabatino.
+                    desde la U-3 hasta la U-17.Contamos con horario semanal y horario sabatino.
                 </p>
                 <a href="{{route('contactanos')}}" class="btn-futeca d-flex">
                     <div class="ml-2 mt-1">INSCRÍBETE</div>
@@ -100,61 +110,30 @@
                 </a>
             </div>
             <div class="col-12">
-                <div class="mt-4 pt-4" >
-                  <h1 class="text-center pb-2 {{-- mr-4 --}}">ENTRENADORES</h1>
-                  <div class="owl-carousel owl-theme staff" id="staff">
-             @foreach ($Staff as $item)
-              <div class="row">
-                <div class="{{-- name-staff --}} d-flex align-items-end col-12 col-sm-4 col-md-4 col-lg-4">
-                <h2>{{$item->nombre}}</h2>
+                <div class="mt-4 pt-4">
+                    <h1 class="text-center pb-2 {{-- mr-4 --}}">ENTRENADORES</h1>
+                    <div class="owl-carousel owl-theme staff" id="staff">
+                        @foreach ($Staff as $item)
+                        <div class="row">
+                            <div class="{{-- name-staff --}} d-flex align-items-end col-12 col-sm-4 col-md-4 col-lg-4">
+                                <h2>{{$item->nombre}}</h2>
+                            </div>
+                            <div
+                                class="{{-- image-staff --}}  d-flex align-items-end col-12 col-sm-4 col-md-4 col-lg-4">
+                                <img src="{{Storage::url($item->fotoperfil)}}" alt="">
+                            </div>
+                            <div
+                                class="{{-- description-staff --}} text-white  d-flex align-items-end col-12 col-sm-4 col-md-4 col-lg-4">
+                                <p class="pb-0 mb-0">{{$item->cargo}} <br> <br> {{$item->experiencia}}</p>
+                            </div>
+                        </div>
+                        @endforeach
+                    </div>
                 </div>
-                <div class="{{-- image-staff --}}  d-flex align-items-end col-12 col-sm-4 col-md-4 col-lg-4">
-                <img src="{{Storage::url($item->fotoperfil)}}" alt="">
-                </div>
-                <div class="{{-- description-staff --}} text-white  d-flex align-items-end col-12 col-sm-4 col-md-4 col-lg-4">
-                <p class="pb-0 mb-0">{{$item->cargo}} <br> <br> {{$item->experiencia}}</p>
-                </div>
-              </div>
-          @endforeach
-      </div>
-                </div>
-              </div>
-        </div>
-    </div>
-
-=======
-            </div>
-        </div>
-        <div class="tres"></div>
-    </div>
-
-    <div class="container-fluid d-block d-lg-none" style="background:#ffe604">
-        <div class="container">
-            <div class="text-our-family">
-                <h1><span style="color: #df5151;"> ACADEMIA </span>FUTECA</h1>
-                <p class="">Academia dedicada al desarrollo del fútbol, tanto formativo, recreativo y competitivo en
-                    diferentes segmentos de la sociedad. Ofrecemos exclusivamente el desarrollo y formación de
-                    habilidades motrices básicas, cualidades físicas especiales, fundamentos técnicos y tácticos,
-                    habilidades cognitivas y valores.</p>
-                <p class="text-justify">Somos un centro especializado en la enseñanza del fútbol para niños y niñas en
-                    edades de 3 a 18 años.
-                    Aquí aprenden las diferentes tácticas y estrategias de este deporte: Técnica, disciplina y el
-                    fundamento de trabajar en equipo. Participan en torneos locales, nacionales, regionales e
-                    internacionales.
-                    Asimismo, se realizan viajes al interior del país para jugar partidos amistosos y al mismo tiempo
-                    conocer Honduras. Los alumnos son clasificados de acuerdo con su año de nacimiento en categorías,
-                    desde la U-4 hasta la U-18. Contamos con horario semanal y horario sabatino.
-                </p>
-                <a href="{{route('contactanos')}}" class="btn-futeca d-flex">
-                    <div class="ml-2 mt-1">INSCRÍBETE</div>
-                    <div class="after"></div>
-                    <span>></span>
-                </a>
             </div>
         </div>
     </div>
 
->>>>>>> origin
 </section>
 
 
@@ -196,10 +175,7 @@
                 aria-controls="nav-profile" aria-selected="false">Sábados</a>
             {{--<a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</a>--}}
         </div>
-<<<<<<< HEAD
-=======
         </nav>
->>>>>>> origin
         <div class="tab-content" id="nav-tabContent">
             <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
                 <div class="table-responsive  table-condensed">
@@ -220,19 +196,14 @@
                                 <td>{{$item->categoria}}</td>
                                 <td>L.{{$item->precio}}</td>
                                 <td>{{$item->dias}}</td>
-<<<<<<< HEAD
                                 @php
-                                    $tiempo=date("g:i a",strtotime($item->horainicio));
+                                $tiempo=date("g:i a",strtotime($item->horainicio));
                                 @endphp
                                 <td>{{$tiempo}}</td>
                                 @php
-                                    $tiempo=date("g:i a",strtotime($item->horafin));
+                                $tiempo=date("g:i a",strtotime($item->horafin));
                                 @endphp
                                 <td>{{$tiempo}}</td>
-=======
-                                <td>{{$item->horainicio}}</td>
-                                <td>{{$item->horafin}}</td>
->>>>>>> origin
                             </tr>
                             @endforeach
                         </tbody>
@@ -254,19 +225,14 @@
                         <tr class="text-center">
                             <td>{{$item->categoria}}</td>
                             <td>L.{{$item->precio}}</td>
-<<<<<<< HEAD
                             @php
-                                    $tiempo=date("g:i a",strtotime($item->horainicio));
-                                @endphp
+                            $tiempo=date("g:i a",strtotime($item->horainicio));
+                            @endphp
                             <td>{{$tiempo}}</td>
                             @php
-                                    $tiempo=date("g:i a",strtotime($item->horafin));
-                                @endphp
+                            $tiempo=date("g:i a",strtotime($item->horafin));
+                            @endphp
                             <td>{{$tiempo}}</td>
-=======
-                            <td>{{$item->horainicio}}</td>
-                            <td>{{$item->horafin}}</td>
->>>>>>> origin
                         </tr>
                         @endforeach
                     </tbody>
@@ -275,10 +241,7 @@
         </div>
         <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
     </div>
-<<<<<<< HEAD
-=======
     </div>
->>>>>>> origin
 </section>
 
 
@@ -305,38 +268,68 @@
         </div>
     </div>--}}
     <section>
-<<<<<<< HEAD
-        <h1 class="text-center"><span>POLÍTICAS</span></h1> <br>
-
-        <div class="row m-0">
-=======
         <h1 class="text-center"><span style="color: #df5151;"> GALERÍA </span>ACADEMIA</h1>
-        <div class="container ">
-            <div class="content">
-                <a class="elem" href="./assets/images/academia/galeria/img1.jpg" title="" data-lcl-txt="" data-lcl-author=""
-                    data-lcl-thumb="./assets/images/academia/galeria/img1.jpg">
-                    <span style="background-image: url(./assets/images/academia/galeria/img1.jpg);"></span>
-                </a>
-                <a class="elem" href="./assets/images/academia/galeria/img2.jpg" title="" data-lcl-txt="" data-lcl-author=""
-                    data-lcl-thumb="./assets/images/academia/galeria/img2.jpg">
-                    <span style="background-image: url(./assets/images/academia/galeria/img2.jpg);"></span>
-                </a>
-                <a class="elem" href="./assets/images/academia/galeria/img3.jpg" title="" data-lcl-txt="" data-lcl-author=""
-                    data-lcl-thumb="./assets/images/academia/galeria/img3.jpg">
-                    <span style="background-image: url(./assets/images/academia/galeria/img3.jpg);"></span>
-                </a>
-                <a class="elem" href="./assets/images/academia/galeria/img4.jpg" title="" data-lcl-txt="" data-lcl-author=""
-                    data-lcl-thumb="./assets/images/academia/galeria/img4.jpg">
-                    <span style="background-image: url(./assets/images/academia/galeria/img4.jpg);"></span>
-                </a>
-                <a class="elem" href="./assets/images/academia/galeria/img5.jpg" title="" data-lcl-txt="" data-lcl-author=""
-                    data-lcl-thumb="./assets/images/academia/galeria/img5.jpg">
-                    <span style="background-image: url(./assets/images/academia/galeria/img5.jpg);"></span>
-                </a>
-                <a class="elem" href="./assets/images/academia/galeria/img6.jpg" title="" data-lcl-txt="" data-lcl-author=""
-                    data-lcl-thumb="./assets/images/academia/galeria/img6.jpg">
-                    <span style="background-image: url(./assets/images/academia/galeria/img6.jpg);"></span>
-                </a>
+        <div class="container">
+            <div class="row">
+                @foreach ($categorias as $item)
+                    <div class="col-lg-6">
+                @php
+                $categoria = $item->categoria;
+                @endphp
+                {{--<h1>{{$item->categoria}}</h1>--}}
+                        <div id="{{$item->categoria}}">
+                        <div class="owl-carousel owl-theme galeria_academia rounded" id="">
+                        @foreach ($Galeria as $foto) {{-- iteracion igual a toda las fotos --}}
+                        @php
+                        $foto_image = str_replace("\\", '/', $foto->foto);
+                        @endphp
+                            @if ($foto->categoria == $categoria)
+                                <div class="item">
+                                <a  href="{{Storage::url($foto_image)}}" title="">
+                                        <img   class="rounded" height="500" width="350" src="{{Storage::url($foto_image)}}" alt="">
+                                    </a>
+                                    <span class="item-desc"><h1 class="text-white" style="padding-top: 6px;">{{$item->categoria}}</h1></span>
+                                </div>
+                           
+                            @endif
+                      
+                        @endforeach
+                    </div>
+                </div>
+                 </div>
+                 @endforeach            
+            </div>
+                {{-- <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+                    <div id="lcl_elems_wrapper">
+                        @foreach ($Galeria as $item_gal)
+                        @php
+                        $foto = str_replace("\\", '/', $item_gal->foto);
+                        @endphp
+                        @if ($item_gal->categoria == $categoria)
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-interval="10000">
+                                <a href="{{Storage::url($foto)}}" title="">
+                                    <img src="{{Storage::url($foto)}}" class="d-block w-100" alt="...">
+                                </a>
+                            </div>
+                            @endif
+                            @endforeach
+                            
+                        </div>
+                        @endforeach
+
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleInterval" role="button"
+                            data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleInterval" role="button"
+                            data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                </div> --}}
             </div>
         </div>
     </section>
@@ -344,99 +337,70 @@
         <h1 class="text-center"><span>POLÍTICAS</span></h1> <br>
 
         <div class="container">
-          <div class="row m-0">
->>>>>>> origin
-            <div class="card col-lg-3 col-md-3 col-12 text-white bg-info mb-3">
-                <div class="card-body">
-                    <p class="card-text">Para ser parte de nuestra academia el alumno debe estar inscrito y tener
-                        cancelado el mes correspondiente al momento del ingreso.</p>
+            <div class="row m-0">
+                <div class="card col-lg-3 col-md-3 col-12 text-white bg-info mb-3">
+                    <div class="card-body">
+                        <p class="card-text">Para ser parte de nuestra academia el alumno debe estar inscrito y tener
+                            cancelado el mes correspondiente al momento del ingreso.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="card col-lg-3 col-md-3 col-12 bg-light mb-3">
-                <div class="card-body">
-                    <p class="card-text">Los pagos de las mensualidades deben realizarse los primeros 10 días de cada
-                        mes.</p>
+                <div class="card col-lg-3 col-md-3 col-12 bg-light mb-3">
+                    <div class="card-body">
+                        <p class="card-text">Los pagos de las mensualidades deben realizarse los primeros 10 días de
+                            cada
+                            mes.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="card col-lg-3 col-md-3 col-12 text-white bg-info mb-3">
-                <div class="card-body">
-                    <p class="card-text">En caso de no cancelar en tiempo y forma se le suspenderán los entrenos al
-                        alumno por medio de la tarjeta roja y podrá incorporarse al momento de hacer efectivo el pago.
-                    </p>
+                <div class="card col-lg-3 col-md-3 col-12 text-white bg-info mb-3">
+                    <div class="card-body">
+                        <p class="card-text">En caso de no cancelar en tiempo y forma se le suspenderán los entrenos al
+                            alumno por medio de la tarjeta roja y podrá incorporarse al momento de hacer efectivo el
+                            pago.
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div class="card col-lg-3 col-md-3 col-12 bg-light mb-3">
-                <div class="card-body">
-<<<<<<< HEAD
-=======
-                    <p class="card-text">En caso de no haber cancelado en los primeros 10 días del mes se cobrará L.
-                        25.00 extra sobre las mensualidades.</p>
+                <div class="card col-lg-3 col-md-3 col-12 bg-light mb-3">
+                    <div class="card-body">
+                        <p class="card-text">El no notificar la ausencia de los entrenos ya sea por estudios, viajes y
+                            lesiones o estado de salud, está sujeto al pago de la mensualidad correspondiente. (Si
+                            notifica
+                            la ausencia, su mensualidad se congelará hasta su regreso).</p>
+                    </div>
                 </div>
-            </div>
 
-            <div class="card col-lg-3 col-md-3 col-12 text-white bg-info mb-3">
-                <div class="card-body">
->>>>>>> origin
-                    <p class="card-text">El no notificar la ausencia de los entrenos ya sea por estudios, viajes y
-                        lesiones o estado de salud, está sujeto al pago de la mensualidad correspondiente. (Si notifica
-                        la ausencia, su mensualidad se congelará hasta su regreso).</p>
+                <div class="card col-lg-3 col-md-3 col-12 text-white bg-info mb-3">
+                    <div class="card-body">
+                        <p class="card-text">La inasistencia consecutiva a 3 meses causará la baja de inscripción. Y al
+                            momento de regresar deberá pagar la inscripción.</p>
+                    </div>
                 </div>
-            </div>
-<<<<<<< HEAD
+                <div class="card col-lg-3 col-md-3 col-12 bg-light mb-3">
+                    <div class="card-body">
+                        <p class="card-text">Los alumnos para poder recibir sus entrenamientos deben portar su uniforme
+                            correspondiente. (Camisa, calzoneta, chimpas, medias y tenis tacos).</p>
+                    </div>
+                </div>
+                <div class="card col-lg-3 col-md-3 col-12 text-white bg-info mb-3">
+                    <div class="card-body">
+                        <p class="card-text">Para los torneos los alumnos tienen que ser constantes en sus
+                            entrenamientos
+                            (No es solo venir a los torneos).</p>
+                    </div>
+                </div>
+                <div class="card col-lg-3 col-md-3 col-12 bg-light mb-3">
+                    <div class="card-body">
+                        <p class="card-text">Para poder participar en los torneos es obligatorio tener disponible los 2
+                            uniformes de competencia, el pago de la inscripción al torneo y la mensualidad al día.</p>
+                    </div>
+                </div>
 
-            <div class="card col-lg-3 col-md-3 col-12 text-white bg-info mb-3">
-=======
-            <div class="card col-lg-3 col-md-3 col-12 bg-light mb-3">
->>>>>>> origin
-                <div class="card-body">
-                    <p class="card-text">La inasistencia consecutiva a 3 meses causará la baja de inscripción. Y al
-                        momento de regresar deberá pagar la inscripción.</p>
-                </div>
-            </div>
-<<<<<<< HEAD
-            <div class="card col-lg-3 col-md-3 col-12 bg-light mb-3">
-=======
-            <div class="card col-lg-3 col-md-3 col-12 text-white bg-info mb-3">
->>>>>>> origin
-                <div class="card-body">
-                    <p class="card-text">Los alumnos para poder recibir sus entrenamientos deben portar su uniforme
-                        correspondiente. (Camisa, calzoneta, chimpas, medias y tenis tacos).</p>
-                </div>
-            </div>
-<<<<<<< HEAD
-            <div class="card col-lg-3 col-md-3 col-12 text-white bg-info mb-3">
-=======
-            <div class="card col-lg-3 col-md-3 col-12 bg-light mb-3">
->>>>>>> origin
-                <div class="card-body">
-                    <p class="card-text">Para los torneos los alumnos tienen que ser constantes en sus entrenamientos
-                        (No es solo venir a los torneos).</p>
-                </div>
-            </div>
-<<<<<<< HEAD
-            <div class="card col-lg-3 col-md-3 col-12 bg-light mb-3">
-=======
-            <div class="card col-lg-3 col-md-3 col-12 text-white bg-info mb-3">
->>>>>>> origin
-                <div class="card-body">
-                    <p class="card-text">Para poder participar en los torneos es obligatorio tener disponible los 2
-                        uniformes de competencia, el pago de la inscripción al torneo y la mensualidad al día.</p>
-                </div>
-            </div>
-<<<<<<< HEAD
-            
 
-        </div>
+            </div>
 
 
 
 
 
-=======
-
-        </div>
-        </div>
->>>>>>> origin
     </section>
 
 

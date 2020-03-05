@@ -10,7 +10,8 @@ use App\Eventos;
 use App\Horariosacademia;
 use App\Horarioalquileres;
 use App\Staff;
-
+use App\Categoriaga;
+use App\GaleriaAcademium;
 
 class PagesController extends Controller
 {
@@ -28,16 +29,26 @@ class PagesController extends Controller
         $Staff=App\Staff::all();
         $Horario = App\Horariosacademia::where('dias', '!=', 'sabado')->get();
         $Horariosabado = App\Horariosacademia::where('dias','sabado')->get();
+        $Galeria=App\GaleriaAcademium::all();
+        $categorias=App\Categoriaga::all();
 
-                    
-        return view('academia',compact('Horario','Horariosabado','Staff'));
+        return view('academia',compact('Horario','Horariosabado','Staff','Galeria','categorias'));
     }
 
     public function alquileres() {
 
         $Galeriacanchas = App\Galeriacancha::all(); 
-        $horariopromocion = App\Horarioalquileres::where('dias','lunes-martes')->get();   
-        $horariosemana = App\Horarioalquileres::where('dias','!=','lunes-martes')->get();
+        $horariopromocion = App\Horarioalquileres::where('tipo','promocion')->get();  
+
+        /*$hrpromo = json_decode($horariopromocion, true);*/
+        
+        
+        $horariosemana = App\Horarioalquileres::where('tipo','!=','promocion')->get();
+         /* dd($hrpromo); */
+        
+
+        //dd($horariopromocionDomingo);
+
         return view('alquileres',compact('Galeriacanchas','horariopromocion','horariosemana'));
     }
 
