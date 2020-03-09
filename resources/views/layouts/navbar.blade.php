@@ -24,7 +24,7 @@
     <div class="collapse navbar-collapse py-3" id="navbarNavDropdown">
       <ul class="navbar-nav ml-auto ">
         <li class="nav-item active">
-        <a class="nav-link" href="{{route('index')}}">Futeca</a>
+        <a class="nav-link" href="{{route('index')}}">Inicio</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="{{route('academia')}}">Academia</a>
@@ -33,10 +33,10 @@
           <a class="nav-link" href="{{route('alquileres')}}">Alquileres</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="{{route('palco')}}">Palco</a>
+            <a class="nav-link" href="{{route('torneos')}}">Torneos</a>
           </li>
           <li class="nav-item">
-              <a class="nav-link" href="{{route('torneos')}}">Torneos</a>
+              <a class="nav-link" href="{{route('palco')}}">Palco</a>
             </li>
         <li class="nav-item">
           <a class="nav-link" href="{{route('contactanos')}}">Contáctanos</a>

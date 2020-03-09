@@ -16,7 +16,7 @@
         <div class="carousel-item active" style="background-image: url('./assets/images/index/cancha.jpg')">
           <div class="carousel-caption d-none d-md-block">
             <h1 class="bg-danger text-white font-weight-bold">RESERVA TU CANCHA</h1>
-            <a href="" class="btn-futeca d-flex">
+          <a href="{{route('contactanos')}}" class="btn-futeca d-flex">
               <div class="ml-2 mt-1">CONTÁCTANOS</div>
               <div class="after"></div>
               <span>></span>
@@ -26,9 +26,9 @@
 
         <div class="carousel-item" style="background-image: url('./assets/images/index/banner2.jpg')">
           <div class="carousel-caption d-none d-md-block">
-          <h1 class="bg-danger text-white font-weight-bold">RESERVA TU CANCHA</h1>
-            <a href="" class="btn-futeca d-flex">
-              <div class="ml-2 mt-1">CONTÁCTANOS</div>
+          <h1 class="bg-danger text-white font-weight-bold">Academia de Niñas</h1>
+            <a href="{{route('academia')}}" class="btn-futeca d-flex">
+              <div class="ml-2 mt-1">VER PRECIOS</div>
               <div class="after"></div>
               <span>></span>
             </a>
@@ -37,9 +37,9 @@
 
         <div class="carousel-item" style="background-image: url('./assets/images/index/banner3.jpg')">
           <div class="carousel-caption d-none d-md-block">
-            <h1 class="bg-danger text-white font-weight-bold">RESERVA TU CANCHA</h1>
-            <a href="" class="btn-futeca d-flex">
-              <div class="ml-2 mt-1">CONTÁCTANOS</div>
+            <h1 class="bg-danger text-white font-weight-bold">Academia de Niños</h1>
+          <a href="{{route('academia')}}" class="btn-futeca d-flex">
+              <div class="ml-2 mt-1">VER PRECIOS</div>
               <div class="after"></div>
               <span>></span>
             </a>
@@ -48,16 +48,14 @@
 
         <div class="carousel-item" style="background-image: url('./assets/images/index/banner4.jpg')">
           <div class="carousel-caption d-none d-md-block">
-            <h1 class="bg-danger text-white font-weight-bold">RESERVA TU CANCHA</h1>
-            <a href="" class="btn-futeca d-flex">
-              <div class="ml-2 mt-1">CONTÁCTANOS</div>
+            <h1 class="bg-danger text-white font-weight-bold">Academia de Porteros</h1>
+            <a href="{{route('academia')}}" class="btn-futeca d-flex">
+              <div class="ml-2 mt-1">VER PRECIOS</div>
               <div class="after"></div>
               <span>></span>
             </a>
           </div>
         </div>
-
-        
       </div>
       <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -191,10 +189,10 @@
 </div>
 </section>
 {{-- Sección Torneos Corporaativos--}}
-<section >
+{{--<section >
   <div class="container ">
     <h1 class="pt-5 text-center" ><span class="h1-span">Torneos</span> Corporativos</h1>
-  </div>
+  </div>--}}
 
 
 {{-- Seccion de patrocinadores --}}

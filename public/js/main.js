@@ -54,7 +54,17 @@ $(document).ready(function(e) {
 	});	
 
 });
+$(document).ready(function() {
+    lc_lightbox('#lcl_elems_wrapper a',{
+        thumb_attr: 'data-lcl-thumb', 
+		
+		skin: 'minimal',
+		radius: 0,
+		padding	: 0,
+		border_w: 0,
 
+    });
+});
 $(document).ready(function(e) {
    
 	// live handler
@@ -86,4 +96,20 @@ $('.staff').owlCarousel({
             items:1
         }
     }
-})
+});
+$('.galeria_academia').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+});

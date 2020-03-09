@@ -49,7 +49,7 @@
             <div class="row no-gutters">
                 <div class="col-md-8">
                     <div class="card-body">
-                        <h1 class="card-title font-weight-bold"><span style="color: #df5151;">FUT7 - 2</span> Canchas
+                        <h1 class="card-title font-weight-bold"><span style="color: #df5151;">FUT6</span> Canchas
                         </h1>
                         <p class="card-text"> Arrendamos por hora las canchas a personas naturales, empresas, colegios, universidades o equipos que deseen organizar 
                           juegos o entrenamientos. Abiertos de lunes a domingo de 8:00am – 10:00pm. También abrimos días feriados. 
@@ -108,12 +108,17 @@
                                 <th scope="col">Hora Fin</th>
                             </tr>
                         </thead>
+                        
                         <tbody>
                             @foreach($horariopromocion as $item)
+                            {{-- @php
+                                var-dump($item->days)
+                            @endphp --}}
                             <tr class="text-center">
                                 <td>{{$item->cancha}}</td>
                                 <td>L.{{$item->precio}}</td>
-                                <td>{{$item->dias}}</td>
+                                
+                                <td>{{$item->days}}</td>
                                 @php
                                     $tiempo=date("g:i a",strtotime($item->horainicio));
                                 @endphp
@@ -126,6 +131,7 @@
                             @endforeach
                         </tbody>
                     </table>
+                    
                 </div>
             </div>
             <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
@@ -144,7 +150,7 @@
                         <tr class="text-center">
                             <td>{{$item->cancha}}</td>
                             <td>L.{{$item->precio}}</td>
-                            <td>{{$item->dias}}</td>
+                            <td>{{$item->days}}</td>
                             @php
                                     $tiempo=date("g:i a",strtotime($item->horainicio));
                                 @endphp
@@ -157,6 +163,7 @@
                         @endforeach
                     </tbody>
                 </table>
+            </div>
             </div>
         </div>
         <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>

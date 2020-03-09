@@ -19,6 +19,11 @@
     background-image: url('../assets/images/torneos/torneoficohsa.jpg');
     background-position: 5px -150px;
 }
+
+.banner .principal-banner img {
+    height: 96vh;
+    width: 100%;
+}
     </style>
 <section class="banner">
   <div class="principal-banner d-flex justify-content-center align-items-center">
