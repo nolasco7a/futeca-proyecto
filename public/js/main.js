@@ -85,6 +85,8 @@ $('.staff').owlCarousel({
     loop:true,
     margin:10,
     nav:true,
+    autoplay:true,
+    autoplayTimeout:8000,
     responsive:{
         0:{
             items:1
@@ -101,6 +103,8 @@ $('.galeria_academia').owlCarousel({
     loop:true,
     margin:10,
     nav:true,
+    autoplay:true,
+    autoplayTimeout:8000,
     responsive:{
         0:{
             items:1
