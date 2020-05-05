@@ -49,7 +49,7 @@
             <div class="row no-gutters">
                 <div class="col-md-8">
                     <div class="card-body">
-                        <h1 class="card-title font-weight-bold"><span style="color: #df5151;">FUT6</span> Canchas
+                        <h1 class="card-title font-weight-bold"><span style="color: #df5151;">FUT7</span> Canchas
                         </h1>
                         <p class="card-text"> Arrendamos por hora las canchas a personas naturales, empresas, colegios, universidades o equipos que deseen organizar 
                           juegos o entrenamientos. Abiertos de lunes a domingo de 8:00am – 10:00pm. También abrimos días feriados. 
