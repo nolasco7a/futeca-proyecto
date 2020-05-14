@@ -118,7 +118,7 @@
                                 <td>{{$item->cancha}}</td>
                                 <td>L.{{$item->precio}}</td>
                                 
-                                <td>{{$item->days}}</td>
+                                <td>{{$item->dias}}</td>
                                 @php
                                     $tiempo=date("g:i a",strtotime($item->horainicio));
                                 @endphp
@@ -150,7 +150,7 @@
                         <tr class="text-center">
                             <td>{{$item->cancha}}</td>
                             <td>L.{{$item->precio}}</td>
-                            <td>{{$item->days}}</td>
+                            <td>{{$item->dias}}</td>
                             @php
                                     $tiempo=date("g:i a",strtotime($item->horainicio));
                                 @endphp

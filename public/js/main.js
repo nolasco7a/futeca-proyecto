@@ -117,3 +117,4 @@ $('.galeria_academia').owlCarousel({
         }
     }
 });
+

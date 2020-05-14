@@ -1,21 +1,23 @@
 
-
-.row2 {
-    margin-top: 4%;
-    margin-left: 50%;
-    width: 89%;
-    text-align: justify;
-    -webkit-transform: skew(16deg);
-    transform: skew(16deg);
-}
-
-
-
-.tres{
-    background-image: url('../assets/images/torneos/torneoficohsa.jpg');
-}
-
 .banner .principal-banner img {
     height: 96vh;
     width: 100%;
+}
+
+.pt-5{
+
+    @media (max-width: 767.98px) {
+
+        padding-top: 2rem !important ;
+
+    }
+}
+
+.col-md-4{
+
+    @media (max-width: 767.98px) {
+
+        padding-top: 83px;
+        
+    }
 }

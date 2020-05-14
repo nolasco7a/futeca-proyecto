@@ -59,7 +59,9 @@ class PagesController extends Controller
     }
 
     public function torneos() {
-        return view('torneos');
+
+        $Galeriatorneos = App\GaleriaTorneo::all();
+        return view('torneos', compact('Galeriatorneos'));
     }
 
 }

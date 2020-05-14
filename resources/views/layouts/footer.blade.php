@@ -1,8 +1,10 @@
 <section class="footer">
-  <div class="container-fluid footer text-white">
-    <div class="d-flex justify-content-center">
-      <img class="img-footer" src="./assets/images/logos/logo-trapiche.png" alt="">
+  <div class="container-fluid footer text-white ">
+     <div class="row d-flex justify-content-center">
+     <div class=" col-lg-3 col-md-3 col-sm-3 col-3 d-flex justify-content-center align-items-center ">
+      <img class="img-footer " src="./assets/images/logos/logo-trapiche.png" alt="" >
     </div>
+     </div>
     <div class="row d-flex justify-content-center">
       <ul class="nav nav-footer">
         <li class="nav-item">

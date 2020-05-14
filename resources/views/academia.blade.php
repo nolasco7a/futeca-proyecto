@@ -73,7 +73,7 @@
                                 </div>
                                 <div
                                     class="description-staff text-white  d-flex align-items-end col-12 col-sm-4 col-md-4 col-lg-4">
-                                    <p class="pb-0 mb-0">{{$item->cargo}} <br> <br> {{$item->experiencia}}</p>
+                                    <p class="pb-0 mb-0" style="font-size: 0.90rem !important; color: #f8f9fa; font-weight: bold;">{{$item->cargo}} <br> <br> {{$item->experiencia}}</p>
                                 </div>
                             </div>
                             @endforeach
@@ -86,7 +86,7 @@
     </div>
 
 
-    <div class="container-fluid d-block d-lg-none" style="background:#ffe604">
+    <div class="container-fluid d-block d-lg-none" style="background:#f3e352">
         <div class="container">
             <div class="text-our-family">
                 <h1><span style="color: #df5151;"> NUESTRA </span>FAMILIA</h1>
@@ -166,7 +166,7 @@
 
 <section>
     <div class="container py-5">
-        <h1 class="font-weight-bold pb-4 text-center">Horarios Academia </h1>
+        <h1 class="font-weight-bold pb-4 text-center horario">Horarios Academia </h1>
         <div class="nav nav-tabs" id="nav-tab" role="tablist">
             <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
                 aria-controls="nav-home" aria-selected="true">Semana</a>
@@ -272,7 +272,7 @@
         <div class="container">
             <div class="row">
                 @foreach ($categorias as $item)
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 galeria">
                 @php
                 $categoria = $item->categoria;
                 @endphp
@@ -334,7 +334,7 @@
         </div>
     </section>
     <section>
-        <h1 class="text-center"><span>POLÍTICAS</span></h1> <br>
+        <h1 class="text-center politicas"><span>POLÍTICAS</span></h1> <br>
 
         <div class="container">
             <div class="row m-0">

@@ -149,7 +149,7 @@
   </div>
 </div>
   
-<div class="d-lg-none d-block" style="background:#ffe604">
+<div class="d-lg-none d-block" style="background:#f3e352">
   <div class="container">
     <div class="col-12">
       <div class="text-our-family">
@@ -217,7 +217,13 @@
         @foreach ($noticias as $noticia)
         <div class="col-lg-4 col-md-4 col-sm-6 col-12">
             <div class="card p-3 card-shadow">
-            <img src="{{Storage::url($noticia->imagen)}}" class="card-img-top" alt="...">
+            @php
+                      $urlnoticia = json_decode($noticia->imagen);
+                      $urlnoticia = str_replace('\\', '/', $urlnoticia);
+                      $first= Arr::first($urlnoticia);
+                      @endphp
+            
+            <img src="{{Storage::url($first)}}" class="card-img-top" alt="...">
               <div class="card-body p-0">
                 @php
                     $fecha=date_format($noticia->created_at, 'd-m-y');
@@ -227,7 +233,7 @@
                 <div class="separator-title"></div>
                 @php
                     $descripcion = $noticia->descripcion;
-                    $descripcion = substr($descripcion, 0, 80);
+                    $descripcion = substr($descripcion, 0, 100);
                 @endphp
               <p class="card-text">{{$descripcion}}...</p>
               <a href="" class="btn-futeca-2 d-flex" data-toggle="modal" data-target="#Modal{{$noticia->id}}">

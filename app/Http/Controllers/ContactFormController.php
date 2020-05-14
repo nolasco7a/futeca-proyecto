@@ -36,7 +36,7 @@ class ContactFormController extends Controller
         $subject = "mensaje";
         $for = "kelsy.maradiaga@ujcv.edu.hn";
         Mail::send('email',$request->all(), function($msj) use($subject,$for){
-           $msj->from("onmediagrouphn02@gmail.com","Futeca");
+           $msj->from("futecahn2020@gmail.com","Futeca");
            $msj->subject($subject);
             $msj->to($for);
         });
