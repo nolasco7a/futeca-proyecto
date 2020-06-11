@@ -322,3 +322,19 @@ overflow: hidden;
   z-index: 0;
   
 }
+
+.img-aviso{
+
+  height: 550px;
+
+  @media (max-width: 768px){
+       
+        height: 400px;
+  }
+
+  @media (max-width: 375px){
+       
+    height: 350px;
+}
+
+}

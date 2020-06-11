@@ -1,3 +1,7 @@
+
+$('#myModal').modal('show');
+
+
 $('#iniciobanner').owlCarousel({
     loop:true,
     margin:10,

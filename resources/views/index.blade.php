@@ -3,6 +3,8 @@
 {{--CONTÁCTANOS--}}
 
 
+
+
 <section>
   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
@@ -273,4 +275,26 @@
 </div>
 </section>
 
+
+     <!-- Modal -->
+<div class="modal " id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+
+
+    <div class="modal-content">
+    <div class="container" style="position:absolute">
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" style="    color: white;
+    font-size: 50px;
+    font-weight: bold;">&times;</span>
+        </button>
+    </div>
+    <img src="./assets/images/aviso.jpg"  class="img-aviso" alt="" >      
+    </div>
+  </div>
+</div>
+
+
  @endsection
+
+ 
