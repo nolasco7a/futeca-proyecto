@@ -25,7 +25,7 @@
         <div class="overlay"></div>
         <h1>futeca academia</h1>
     </div>
-    </div>
+    
 </section>
 <section>
 
@@ -175,7 +175,7 @@
                 aria-controls="nav-profile" aria-selected="false">Sábados</a>
             {{--<a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</a>--}}
         </div>
-        </nav>
+        
         <div class="tab-content" id="nav-tabContent">
             <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
                 <div class="table-responsive  table-condensed">
@@ -241,7 +241,7 @@
         </div>
         <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
     </div>
-    </div>
+    
 </section>
 
 

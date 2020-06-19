@@ -13,7 +13,9 @@
 }
 @font-face{
     font-family: "futura heavy";
-    src: url('../assets/fonts/FuturaStd-Heavy.otf');
+    src: url('../assets/fonts/FuturaStd-Heavy.otf') format("opentype");
+    
+    
 }
 
 @import 'variables';
@@ -27,3 +29,4 @@
 @import 'palco';
 @import 'torneos'
 
+ 

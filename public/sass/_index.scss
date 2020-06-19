@@ -123,10 +123,11 @@
   max-width: 105vw;
   .text-our-family{
     padding: 3rem;
-    p{
+    /*p{
     color: #e9d10a;
     mix-blend-mode: difference;
-    }
+    }*/
+    font-family: "futura heavy";
   }
   h1{
     color: white;
@@ -318,7 +319,7 @@ overflow: hidden;
   
   width: 100%;
   height: 100%;
-  background-color: #000000cf;
+  background-color: black;
   z-index: 0;
   
 }

@@ -26,10 +26,10 @@
             <div class="col-lg-6">
               <div class="text-our-family">
               <h1><span>futeca</span> PALCO</h1>
-              <p class="text-justify">Contamos con cafetería con vista panorámica de las canchas. 
+              <p class="text-justify" style="color:black; font-weight: bold;">Contamos con cafetería con vista panorámica de las canchas. 
                   Puedes disfrutar de desayunos como baleadas, pan con frijoles, croissant, burritas; además de sándwiches de jamón y queso, sándwiches de pollo y pizzas.Puedes acompañarlo de un refresco, agua, jugo, bebida hidratante o energizante y café de tu elección. Después de jugar una buena potra puedes compartir de una cerveza bien helada.  
               </p>
-              <p class="text-justify">
+              <p class="text-justify" style="color:black; font-weight: bold;">
                   Nuestro PALCO está equipado con 5 pantallas para que puedas observar con tus amigos de los partidos de fútbol, noticieros o cualquier programa. Para aquellos que aprovechan su tiempo les ofrecemos wifi gratis por consumo.
               </p>
               </div>

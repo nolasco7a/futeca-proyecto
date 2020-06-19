@@ -110,9 +110,9 @@
             <br>
              Nuestra cartera de clientes esta conformado por: 
             Banco Ficohsa, Inversiones La Paz, INTUR, UNICOMER, Super Liga Claro, Empresarial Femenino FUT5, Empresarial masculino FUT7, Corporación Flores, Sagrada Familia, entre otros. 
-        </p>    
-      </div>
-      </div>
+         </p>    
+       </div>
+     </div>
     </div>
   </section>
   
